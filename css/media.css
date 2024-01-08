@@ -772,6 +772,7 @@
     }
     .tabs-wrap {
         margin-top: 16px;
+        z-index: 50;
         position: relative;
     }
     .tabs-wrap .tabs {
