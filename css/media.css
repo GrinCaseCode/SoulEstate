@@ -135,9 +135,6 @@
     }
     .consultation-block {
         padding: 45px;
-        min-height: 384px;
-        margin-bottom: -57px;
-        background-image: url(../img/bg_consult2.png);
     }
     .consultation-block .descr-section {
         max-width: 347px;
@@ -184,11 +181,11 @@
         height: 40px;
         border-radius: 8px;
     }
-    .help-block::before {
+    .help-block__bg {
         width: 125px;
         height: 132px;
         right: -29px;
-        bottom: 37px;
+        bottom: -15px;
         background-image: url(../img/help_folders2.svg);
     }
     .help {
@@ -326,6 +323,23 @@
         font-size: 20px;
         line-height: 28px;
     }
+    .consultation-block__bg img {
+        max-width: 217px;
+        height: auto;
+    }
+    .consultation-block__bg {
+        left: 349px;
+        bottom: -100px;
+    }
+    .consultation-block {
+        min-height: 320px;
+    }
+    .feedback-block__bg {
+        bottom: -50px;
+    }
+    .feedback-block__bg img {
+        max-width: 435px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -420,10 +434,13 @@
     }
     .feedback-block {
         padding: 0 24px;
-        background-image: url(../img/bg_feedback_mob.png);
+        background-image: url(../img/bg_feedback_tablet.png);
     }
     .feedback-block__image {
         margin-left: 0;
+    }
+    .feedback-block__bg {
+        right: -44px;
     }
     .feedback-block .title-section {
         padding-top: 48px;
@@ -449,8 +466,14 @@
     .consultation-block {
         padding: 32px;
         min-height: 498px;
-        background-image: url(../img/bg_consult_mob.png);   
+        background-image: url(../img/bg_consult_tablet2.png);   
         margin: 0;
+    }
+    .consultation-block__bg {
+        top: 154px;
+        right: 23px;
+        left: auto;
+        bottom: auto;
     }
     .consultation-block form {
         max-width: 100%;
@@ -735,10 +758,19 @@
     .feedback-block .col-md-5 {
         border-radius: 24px 24px 0 0;
         order: -1;
-        background-image: url(../img/bg__feedback_mob.png);
+        background: linear-gradient(138deg, #FF9162 14.27%, #F27400 147.08%);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+    .feedback-block__bg {
+        top: 100px;
+        right: -30px;
+        bottom: auto;
+        z-index: 0;
+    }
+    .feedback-block__bg img {
+        max-width: 385px;
     }
     .feedback-block {
         padding: 0 8px;
@@ -857,10 +889,13 @@
     .consultation-block {
         padding: 24px 16px;
         min-height: 711px;
-        background-image: url(../img/bg_consult_mob2.png);
+        background-image: url(../img/bg_consult_mob3.png);
     }
     .consultation-block form {
         padding-top: 0;
+    }
+    .consultation-block__bg {
+        top: 250px;
     }
     .slider-three .unit-catalog {
         width: 100%;
@@ -1113,6 +1148,32 @@
     .page-error__image {
         margin-bottom: 32px;
     }
+    .tabs::before {
+        display: none !important;
+    }
+    .collections .wow,
+	.collections .animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		opacity: 1;
+		visibility: visible !important;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -1145,9 +1206,15 @@
     .show-mobile {
         display: none !important;
     }
-    .slider-three:not(.slick-initialized) > li:not(:first-child),
+    .slider-catalog:not(.slick-initialized) > li:not(:first-child),
     .item-catalog__slider:not(.slick-initialized) > li:not(:first-child) {
 	    display: none;
+    }
+    .slider-three:not(.slick-initialized) > li {
+        width: 33.333%;
+    }
+    .slider-two:not(.slick-initialized) > li {
+        width: 50%;
     }
 }
 

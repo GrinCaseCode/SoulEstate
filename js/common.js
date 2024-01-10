@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+	jQuery('.tabs-wrap').each(function() {
+		const tabsWrap = this;
+		const menu = tabsWrap.querySelector(".tabs");
+		const liTab = tabsWrap.querySelector(".firstActive");
+		menu.addEventListener("click", (event) => {
+			liTab.classList.remove("firstActive")
+		  if (event.target.classList.contains("tabs__item")) {
+			menu.style.setProperty(
+			  "--underline-width",
+			  `${event.target.offsetWidth}px`
+			);
+			menu.style.setProperty(
+			  "--underline-offset-x",
+			  `${event.target.offsetLeft}px`
+			);
+		  }
+		});
+
+}); 
+
+
 	/*animate*/
 	new WOW().init();
 
@@ -131,8 +152,12 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		dots: false,
 		infinite: true,
 		touchThreshold: 1000,
-		slidesToShow: 1,
+		slidesToShow: 5,
 		slidesToScroll: 1,
+		autoplay: true,
+        autoplaySpeed: 0,
+        speed: 3000,
+        cssEase:'linear',
 		variableWidth: true,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
@@ -179,31 +204,32 @@ $('.btn-tab').click(function() {
 
 	$(".btn-main_more").click(function(e) {
 		e.preventDefault();
+		
 		setTimeout(function () {
 			$(".item-catalog__slider").slick('setPosition');
 		  }, 300); 
-		  
-		
-		if ($(this).parent().find(".slider-catalog > li:nth-child(n+4)").is(":hidden")) {
-			$(this).parent().find(".slider-catalog > li:nth-child(n+4)").slideDown(0);
-			$(this).html("Скрыть");
-		} else {
-			$(this).parent().find(".slider-catalog > li:nth-child(n+4)").slideUp(0);
-			$(this).html("Показать еще");
-		}
+
+		  $(this).parent().find(".slider-catalog > li:not(:visible):lt(3)").slideDown(0);
+		  var hidden =  $(this).parent().find('.slider-catalog li:hidden').length;
+		 
+		  if (hidden == 0){
+			$(this).remove();
+		 }
+	
 	});
 
 
 	$(".btn-main_collections").click(function(e) {
 		e.preventDefault();
+
+		$(this).parent().find(".row_main > div:not(:visible):lt(3)").slideDown(0);
+		var hiddenCollection =  $(this).parent().find('.row_main > div:hidden').length - 1;
+	   
+		if (hiddenCollection == 0){
+		  $(this).remove();
+	   }
 		
-		if ($(".collections .row_main > div:nth-child(n+4)").is(":hidden")) {
-			$(".collections .row_main > div:nth-child(n+4)").slideDown(0);
-			$(this).html("Скрыть");
-		} else {
-			$(".collections .row_main > div:nth-child(n+4)").slideUp(0);
-			$(this).html("Показать еще");
-		}
+
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
