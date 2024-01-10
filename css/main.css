@@ -1497,6 +1497,8 @@ form {
 .feedback-block .btn-main {
 	animation: idleBtn 5s ease-in-out infinite;
 }
+.billbord .btn-main:hover,
+.header .btn-main:hover,
 .contacts .btn-main:hover,
 .feedback-block .btn-main:hover,
 .consultation-block .btn-main:hover, 
@@ -1517,7 +1519,10 @@ box-shadow: none !important;
 	  transform: scale(1.1);
 	}
   }
-
+.billbord .btn-main,
+.header .btn-main {
+	animation: orangeBtn 5s ease-in-out infinite;	
+}
 .contacts .btn-main {
 	animation: whiteBtn 5s ease-in-out infinite;
 }
@@ -1529,6 +1534,20 @@ box-shadow: none !important;
 	}
 	45% {
 	  box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+	}
+	45%,
+	50% {
+	  transform: scale(1.1);
+	}
+  }
+  @keyframes orangeBtn {
+	0%,
+	10% {
+	  transform: scale(1);
+	  box-shadow: 0 0 0 0 rgba(243, 125, 64, 1);
+	}
+	45% {
+	  box-shadow: 0 0 0 16px rgba(243, 125, 64, 0);
 	}
 	45%,
 	50% {
