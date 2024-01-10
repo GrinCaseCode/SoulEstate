@@ -183,9 +183,11 @@ form {
 	color: #fff;
 	display: inline-block;
 }
-.wrapper_page .header .phone-main:hover,
-.header.fixed .phone-main:hover,
 .phone-main:hover {
+	color: #ff9c69;
+}
+.wrapper_page .header .phone-main:hover,
+.header.fixed .phone-main:hover {
 	color: #F37D40;
 }
 .header__right .phone-main {
