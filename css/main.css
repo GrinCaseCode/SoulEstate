@@ -1497,7 +1497,7 @@ form {
 }
 .contacts .btn-main:hover,
 .feedback-block .btn-main:hover,
-.consultation-block .btn-main, 
+.consultation-block .btn-main:hover, 
 .help-block .btn-main:hover {
 box-shadow: none !important;
 }
