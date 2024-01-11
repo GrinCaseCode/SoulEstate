@@ -481,7 +481,7 @@
         margin-bottom: 72px;
     }
     .slider-three .unit-catalog {
-        width: 352px;
+        width: 100%;
     }
     .item-collection__title, .unit-catalog__title, .item-catalog__title {
         font-size: 22px;
