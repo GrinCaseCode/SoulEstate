@@ -1572,3 +1572,42 @@ box-shadow: none !important;
 	background: #2A2A2A;
     transition: transform 0.5s, width 0.5s;
 }
+.list-social label input {
+	position: absolute;
+	z-index: -1;
+	height: 1px !important;
+	width: 1px !important;
+	opacity: 0 !important;
+	margin: 12px 2px 0 7px !important;
+}
+.list-social label {
+	display: block;
+	cursor: pointer;
+}
+.list-social label svg {
+	display: block;
+}
+.list-social label path, 
+.list-social label circle {
+	transition: all 0.5s;
+}
+.list-social label input:checked ~ svg path,
+.list-social label:hover path {
+    fill: #fff;
+}
+.list-social_tg:hover svg circle,
+.list-social_tg input:checked ~ svg circle {
+	fill: #2F80ED !important;
+}
+.list-social_wp:hover svg circle,
+.list-social_wp input:checked ~ svg circle {
+	fill: #5FBC74 !important;
+}
+.list-social_vb:hover svg circle,
+.list-social_vb input:checked ~ svg circle {
+	fill: #AA76FF !important;
+}
+
+.modal-wrap .list-social label input:not(:checked) ~ svg circle {
+    fill: #fff;
+}

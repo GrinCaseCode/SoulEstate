@@ -88,8 +88,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		arrows: true,
 		dots: false,
 		infinite: false,
-		touchThreshold: 1000,
-		swipe: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" transform="matrix(-1 0 0 1 80 0)" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29 37.1133L24 40L29 42.8868V40.5H56V39.5H29V37.1133Z" fill="#2A2A2A"/></svg><div/>',
@@ -98,8 +96,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			{
 				breakpoint: 1200,
 				settings: {
-					slidesToShow: 1,
-					variableWidth: true,
+					slidesToShow: 2,
 					arrows: false
 				}
 			},
@@ -114,8 +111,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		arrows: true,
 		dots: false,
 		infinite: false,
-		touchThreshold: 1000,
-		swipe: false,
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" transform="matrix(-1 0 0 1 80 0)" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29 37.1133L24 40L29 42.8868V40.5H56V39.5H29V37.1133Z" fill="#2A2A2A"/></svg><div/>',
@@ -125,7 +120,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 1,
-					variableWidth: true,
 					arrows: false
 				}
 			},
@@ -140,7 +134,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		arrows: false,
 		dots: true,
 		infinite: true,
-		touchThreshold: 1000,
+		touchThreshold: 100,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',

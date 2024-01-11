@@ -44,7 +44,7 @@
     .billbord__content {
         padding-left: 20px;
         padding-right: 20px;
-        min-height: 650px;
+        min-height: 550px;
     }
     .help,
     .collections,
@@ -415,15 +415,12 @@
         padding-left: 32px;
         padding-right: 32px;
     }
-    .slider-catalog {
-        margin-right: -24px;
-    }
     .catalog__top .descr-section {
         padding-top: 24px;
         max-width: 489px;
     }
     .slider-three .item-catalog {
-        width: 352px;
+        width: 100%;
     }
     .features {
         margin-top: -8px;
@@ -461,7 +458,7 @@
         margin-top: 24px;
     }
     .slider-two .item-catalog {
-        width: 720px;
+        width: 100%;
     }
     .consultation-block {
         padding: 32px;
@@ -506,7 +503,7 @@
     .about__text,
     .about .title-small,
     .about .title-main {
-        margin-left: 175px;
+        margin-left: 0;
         max-width: initial;
     }
     .about .title-small br {
@@ -624,6 +621,15 @@
         align-items: center;
         justify-content: center;
     }
+    .billbord__content {
+        height: auto;
+    }
+    .item-catalog__image {
+        height: 270px;
+    }
+    .slider-two .item-catalog__image {
+        height: 380px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -693,9 +699,9 @@
         margin-right: 16px;
     }
     .title-big {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 400;
-        line-height: 32px;
+        line-height: 36px;
         letter-spacing: -0.84px;
     }
     .billbord .title-big {
@@ -1174,6 +1180,9 @@
 		opacity: 1;
 		visibility: visible !important;
 	}
+    .collections .title-section {
+        font-size: 30px;
+    }
 }
 
 /* Extra Small Devices, Phones */
