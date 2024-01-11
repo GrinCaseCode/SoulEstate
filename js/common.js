@@ -97,11 +97,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 2,
-					arrows: false
 				}
 			},
 			{
 				breakpoint: 768,
+				arrows: false,
 				settings: 'unslick'
 			}
 			]
@@ -120,11 +120,11 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 1,
-					arrows: false
 				}
 			},
 			{
 				breakpoint: 768,
+				arrows: false,
 				settings: 'unslick'
 			}
 			]

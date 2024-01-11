@@ -630,6 +630,33 @@
     .slider-two .item-catalog__image {
         height: 380px;
     }
+    .slider-catalog .slick-prev {
+        left: -10px;
+    }
+    .slider-catalog .slick-next {
+        right: -10px;
+    }
+    .slider-catalog .slick-arrow {
+        width: 45px;
+        height: 45px;
+        margin-top: -20px;
+    }
+    .slider-catalog .slick-arrow svg,
+    .slider-catalog .slick-arrow {
+        width: 45px;
+        height: 45px;
+    }
+    .slider-catalog .slick-arrow path {
+        transform: scale(1.2);
+        transform-origin: 50%;
+        fill: #fff;
+    }
+    .slider-catalog .slick-arrow circle {
+        fill: #F37D40;
+    }
+    .slider-two .slick-arrow {
+        margin-top: 108px;
+    }
 }
 
 /* Medium Devices, Desktops */
