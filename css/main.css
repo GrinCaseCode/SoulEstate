@@ -588,10 +588,15 @@ form {
 	background: #fff;
 }
 .tab-pane {
-	display: none;
+height: 0;
+opacity: 0;
+visibility: visible;
+transition: all 0.3s;
 }
-.tab-pane:first-child {
-	display: block;
+.tab-pane.active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
 }
 .item-catalog__wrap {
 	width: 100%;
@@ -1610,4 +1615,7 @@ box-shadow: none !important;
 
 .modal-wrap .list-social label input:not(:checked) ~ svg circle {
     fill: #fff;
+}
+.catalog {
+	overflow: hidden;
 }
