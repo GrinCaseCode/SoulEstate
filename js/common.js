@@ -75,10 +75,55 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//кнопка sandwich
 	$(".sandwich").click(function() {
 		$(this).toggleClass("active");
-		if ($(".menu-mobile").is(":hidden")) {
-			$(".menu-mobile").slideDown(200);
+		if ($(".menu").is(":hidden")) {
+			$(".menu").slideDown(200);
+			$(".menu-overlay").fadeIn(200);
+			$(".header").addClass("active");
 		} else {
-			$(".menu-mobile").slideUp(200);
+			$(".menu").slideUp(200);
+			$(".menu-overlay").fadeOut(200);
+			$(".header").removeClass("active");
+		}
+	});
+
+	$(".menu-overlay").click(function() {
+		$(".menu").slideUp(200);
+		$(".sandwich").removeClass("active");
+		$(".menu-overlay").fadeOut(200);
+		$(".header").removeClass("active");
+	});
+
+	{
+		if ($(window).width() < 992) { 
+			$(".menu__haschild > a").click(function(e) {
+				e.preventDefault();
+				$(this).parent().siblings().removeClass("active");
+				$(this).parent().siblings().find(".menu__dropdown").slideUp(0);
+				
+				if ($(this).siblings(".menu__dropdown").is(":hidden")) {
+					$(this).parent().addClass("active");
+					$(this).siblings(".menu__dropdown").slideDown(200);
+				} else {
+					$(this).parent().removeClass("active");
+					$(this).siblings(".menu__dropdown").slideUp(200);
+				}
+				
+			});
+		}
+	}
+
+	$(".button-filter").click(function(e) {
+		e.preventDefault();
+		if ($(".hidden-filter").is(":hidden")) {
+			$(".filter-main").addClass("active");
+			$(".hidden-filter").slideDown(200);
+			$(this).html("Скрыть");
+			$(".billbord").addClass("active");
+		} else {
+			$(".filter-main").removeClass("active");
+			$(".hidden-filter").slideUp(200);
+			$(".billbord").removeClass("active");
+			$(this).html("Все фильтры");
 		}
 	});
 
@@ -199,9 +244,9 @@ $('.btn-tab').click(function() {
 		event.preventDefault();
 		$(this).parents().find(".unit-help").removeClass('active');
 		$(this).addClass('active');
-		$(".help .tab-pane").fadeOut(0);
+		$(".help .tab-pane").removeClass("active");
 		var selectTab2 = $(this).attr("href");
-		$(selectTab2).fadeIn(200);
+		$(selectTab2).addClass("active");
 	}); 
 
 	
@@ -228,6 +273,20 @@ $('.btn-tab').click(function() {
 
 		$(this).parent().find(".row_main > div:not(:visible):lt(3)").slideDown(0);
 		var hiddenCollection =  $(this).parent().find('.row_main > div:hidden').length - 1;
+	   
+		if (hiddenCollection == 0){
+		  $(this).remove();
+	   }
+		
+
+	});
+
+	/*new*/
+	$(".btn-main_news").click(function(e) {
+		e.preventDefault();
+
+		$(this).parent().find(".row_main > div:not(:visible):lt(1)").slideDown(0);
+		var hiddenCollection =  $(this).parent().find('.row_main > div:hidden').length;
 	   
 		if (hiddenCollection == 0){
 		  $(this).remove();
