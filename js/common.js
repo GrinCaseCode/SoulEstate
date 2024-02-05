@@ -50,6 +50,21 @@ $(document).ready(function() {
 		$.fancybox.close();
 	});
 
+	$(".btn-like").click(function() {
+		$(this).toggleClass("active");
+	});
+
+	$(".btn-more-about").click(function(e) {
+		e.preventDefault();
+		if ($(".about-catalog__hidden").is(":hidden")) {
+			$(".about-catalog__hidden").slideDown(200);
+			$(this).html("Скрыть");
+		} else {
+			$(".about-catalog__hidden").slideUp(200);
+			$(this).html("Читать еще");
+		}
+	});
+
 
 //прилипающие меню
 var $menu = $(".header");
@@ -299,9 +314,11 @@ $('.btn-tab').click(function() {
 
 	
 
-
-	 // стайлер для select
-	 $('select').styler();
+	$('.item-form select').select2({
+		closeOnSelect : false,
+		allowClear: false,
+		tags: true 
+	});
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto

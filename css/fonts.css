@@ -25,3 +25,12 @@
     font-weight: 500;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Jost';
+    src: local('Jost SemiBold'), local('Jost-SemiBold'),
+        url('../fonts/Jost-SemiBold.woff2') format('woff2'),
+        url('../fonts/Jost-SemiBold.woff') format('woff'),
+        url('../fonts/Jost-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
