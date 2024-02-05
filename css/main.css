@@ -2731,6 +2731,7 @@ span.select2-search.select2-search--inline {
 	box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.1);
 	background: #fff;
 	border: none;
+	z-index: 400;
 	min-width: min-content;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
