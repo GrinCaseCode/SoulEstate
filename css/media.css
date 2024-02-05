@@ -2051,6 +2051,26 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    .select2-results__option--selectable {
+        padding-left: 27px;
+        margin-bottom: 11px;
+    }
+    .select2-dropdown {
+        padding: 8px;
+        padding-right: 6px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .select2-results__option--selectable::after, .select2-results__option--selectable::before {
+        width: 20px;
+        height: 20px;
+    }
+    .select2-results__option--selectable::after {
+        font-size: 10px;
+    }
+    .item-form_prices .select2-container--default .select2-selection--single .select2-selection__rendered, .item-form_prices.item-form .select2-selection {
+        min-height: 35px;
+    }
 }
 
 /* Extra Small Devices, Phones */
