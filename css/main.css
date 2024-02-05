@@ -2727,10 +2727,11 @@ span.select2-search.select2-search--inline {
 	padding-right: 10px;
 	font-size: 16px;
 	line-height: 21px;
-	min-width: 110px;
+	white-space: nowrap;
 	box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.1);
 	background: #fff;
 	border: none;
+	min-width: min-content;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
 	background: transparent;
