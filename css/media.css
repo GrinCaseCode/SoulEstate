@@ -608,9 +608,11 @@
         padding-bottom: 120px;
     }
     .billbord_main .billbord__content {
-        padding-top: 95px;
         padding-left: 0;
         padding-right: 0;
+    }
+    .billbord_catalog.billbord_main .billbord__content  {
+        padding-top: 95px;
     }
     .tags-page__item {
         padding: 0 17px;
@@ -1117,7 +1119,7 @@
     .footer__left_main .text-small br:first-child {
         display: none;
     }
-    .billbord_catalog.billbord_main .billbord__content {
+    .billbord_main .billbord__content {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -2044,6 +2046,10 @@
     }
     .header__wrapper .sandwich {
         margin-left: 9px;
+    }
+    .billbord_main .billbord__content {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
