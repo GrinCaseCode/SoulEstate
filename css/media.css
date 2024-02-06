@@ -2217,6 +2217,9 @@
         width: 37px;
         height: 37px;
     }
+    .page-selections.catalog ~ .btn-more-about {
+        margin-bottom: 40px;
+    }
 }
 
 /* Extra Small Devices, Phones */
