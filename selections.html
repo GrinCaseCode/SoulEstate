@@ -26,7 +26,7 @@
 </head>
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper wrapper_main wrapper_page">
 
 		<header class="header default">
 			<div class="container">
@@ -116,1139 +116,673 @@
 		</header>
 		<div class="menu-overlay"></div>
 
-		<section class="billbord billbord_catalog billbord_main">
-			<div class="image-billbord">
-				<img src="img/billbord_catalog1.jpg" alt="alt">
-			</div>
+		<section class="page-selections catalog">
 			<div class="container">
-				<div class="billbord__content">
-					<ul class="breadcrumbs">
-						<li><a href="#">Главная</a></li>
-						<li>Недвижимость в Москве</li>
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li>Подборки недвижимости</li>
+				</ul>
+				<h1 class="title-section fadeInUp wow" data-wow-duration="1s" data-wow-iteration="1" data-wow-delay="0.3s">Подборки недвижимости</h1>
+				<div class="tabs-wrap fadeInUp wow" data-wow-duration="1s" data-wow-iteration="1" data-wow-delay="0.3s">
+					<div class="btn-tab"></div>
+					<ul class="tabs">
+						<li class="active firstActive"><a href="#tab_selection1" class="tabs__item">Новостройки</a></li>
+						<li><a href="#tab_selection2" class="tabs__item">Апартаменты с отделкой</a></li>
+						<li><a href="#tab_selection3" class="tabs__item">Квартиры с террасами</a></li>
+						<li><a href="#tab_selection4" class="tabs__item">Квартиры с лоджией</a></li>
+						<li><a href="#tab_selection5" class="tabs__item">Для большой семьи</a></li>
+						<li><a href="#tab_selection6" class="tabs__item">Видовые квартиры</a></li>
+						<li><a href="#tab_selection7" class="tabs__item">Рядом с парком</a></li>
+						<li><a href="#tab_selection8" class="tabs__item">С панорамными окнами</a></li>
 					</ul>
-					<div class="billbord__top fadeIn wow" data-wow-iteration="1" data-wow-delay="0.6s">
-						<h1 class="title-big">Подбираем и продаем элитную недвижимость <span class="show-mobile">в Москве и Московской области</span></h1>
-						<div class="checks-filter">
-							<div class="filter-check">
-								<label>
-									<input type="checkbox" checked="checked" />
-									<span>Купить</span>
-								</label>
-							</div>
-							<div class="filter-check">
-								<label>
-									<input type="checkbox" checked="checked" />
-									<span>Арендовать</span>
-								</label>
-							</div>
-							<div class="filter-check">
-								<label>
-									<input type="checkbox"/>
-									<span>Городская</span>
-								</label>
-							</div>
-							<div class="filter-check">
-								<label>
-									<input type="checkbox"/>
-									<span>Загородная</span>
-								</label>
-							</div>
-						</div>
-						<div class="filter-main">
-							<div class="line-filter">
-								<div class="item-form hidden-desktop">
-									<select>
-										<option value="1">Купить</option>
-										<option value="2">Арендовать</option>
-										<option value="3">Городская</option>
-										<option value="4">Загородная</option>
-									</select>
-								</div>
-								<div class="item-form">
-									<select data-placeholder="Тип объекта">
-										<option value="1">Тип объекта</option>
-										<option value="1">Комната</option>
-										<option value="2">Дом, дача, коттедж</option>
-										<option value="3">Земельный участок</option>
-										<option value="4">Гараж и машиноместо</option>
-										<option value="5">Коммерческая недвижимость</option>
-										<option value="6">Недвижимость зарубежом</option>
-									</select>
-								</div>
-								<div class="item-form hidden-desktop">
-									<select>
-										<option value="1">Комнат</option>
-										<option value="2">3</option>
-										<option value="3">4</option>
-										<option value="4">5</option>
-									</select>
-								</div>
-								<div class="item-form hidden-mob">
-									<input type="text" placeholder="Площадь от — до, м2">
-								</div>
-								<div class="item-form item-form_prices">
-									<div class="item-form__inner">
-										<input type="text" placeholder="Цена от">
-									</div>
-									<div class="item-form__inner">
-										<input type="text" placeholder="до">
-									</div>
-									<select>
-										<option value="1">₽</option>
-										<option value="1">$</option>
-									</select>
-								</div>
-								<div class="item-form item-form_multiple hidden-mob">
-									<select data-placeholder="Количество спален" multiple="multiple">
-										<option value="1">Любое</option>
-										<option value="2">1</option>
-										<option value="3">2</option>
-										<option value="4">3</option>
-										<option value="5">4</option>
-									</select>
-								</div>
-								<div class="item-form item-form_multiple item-form_middle hidden-mob">
-									<select data-placeholder="Название ЖК или поселка" multiple="multiple">
-										<option value="1">Академический (5 ЖК)</option>
-										<option value="2">Алексеевский (27 ЖК)</option>
-										<option value="3">Арбат (241 ЖК)</option>
-										<option value="4">Аэропорт (85 ЖК)</option>
-										<option value="5">Аалто (5 ЖК)</option>
-									</select>
-								</div>
-								<a href="#" class="button-filter"><span>Все фильтры</span> </a>
-								<input type="submit" value="ПОКАЗАТЬ" class="btn-main">
-							</div>
-							<div class="hidden-filter">
-								<div class="line-filter">
-									<div class="item-form">
-										<select>
-											<option value="1">Категория</option>
-											<option value="1">Категория</option>
-											<option value="1">Категория</option>
-											<option value="1">Категория</option>
-										</select>
-									</div>
-									<div class="item-form">
-										<select>
-											<option value="1">Отделка</option>
-											<option value="1">Отделка</option>
-											<option value="1">Отделка</option>
-											<option value="1">Отделка</option>
-										</select>
-									</div>
-									<div class="item-form">
-										<select>
-											<option value="1">Район</option>
-											<option value="1">Район</option>
-											<option value="1">Район</option>
-											<option value="1">Район</option>
-										</select>
-									</div>
-									<div class="item-form">
-										<select>
-											<option value="1">Этаж</option>
-											<option value="1">Этаж</option>
-											<option value="1">Этаж</option>
-											<option value="1">Этаж</option>
-										</select>
-									</div>
-									<button class="btn-main btn-main_block">СБРОСИТЬ</button>
-								</div>
-							</div>
-						</div>
-						<div class="tags-filter">
-							<a href="#" class="tag-filter">Новостройки</a>
-							<a href="#" class="tag-filter">Квартиры с террасами</a>
-							<a href="#" class="tag-filter">Апартаменты с отделкой</a>
-							<a href="#" class="tag-filter">Квартиры с лоджией</a>
-							<a href="#" class="tag-filter">Для большой семьи</a>
-						</div>
-					</div>
-					<div class="billbord__bottom hidden-mob">
-						<ul class="tags-page fadeIn wow" data-wow-iteration="1" data-wow-delay="0.6s">
-							<li>
-								<a href="#" class="tags-page__item"><img src="img/flash.svg" alt="">Новинка</a>
-							</li>
-							<li>
-								<a href="#" class="tags-page__item"><img src="img/exclusive.svg" alt="">Эксклюзив</a>
-							</li>
-							<li>
-								<a href="#" class="tags-page__item"><img src="img/fire.svg" alt="">Цена снижена</a>
-							</li>
+				</div>
+				<div class="tab-container">
+					<div class="tab-pane active" id="tab_selection1">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
 						</ul>
-					</div>
-					<div class="billbord__bottom show-mobile">
-						<div class="row">
-							<div class="col-4">
-								<div class="item-billbord fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
-									<div class="icon-page">
-										<img src="img/ic_billbord1.svg" alt="alt">
-									</div>
-									<p>Подберем недвижимость под ваши цели без предоплаты и комиссии </p>
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="item-billbord fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.6s">
-									<div class="icon-page">
-										<img src="img/ic_billbord2.svg" alt="alt">
-									</div>
-									<p>Обладаем базой эксклюзивов и объектов в закрытой продаже</p>
-								</div>
-							</div>
-							<div class="col-4">
-								<div class="item-billbord fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.9s">
-									<div class="icon-page">
-										<img src="img/ic_billbord3.svg" alt="alt">
-									</div>
-									<p>Комплексное юридическое сопровождение сделки</p>
-								</div>
-							</div>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+							</ul>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
+							</ul>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="page-catalog">
-			<div class="container">
-				<div class="head-section">
-					<h2 class="title-section fadeInUp wow" data-wow-duration="1s" data-wow-iteration="1" data-wow-delay="0.3s">3 500 объект на продажу в <a href="#">ЖК</a></h2>
-					<div class="buttons-catalog">
-						<a href="#" class="btn-catalog"><img src="img/sort_catalog.svg" alt="alt">Сортировка</a>
-						<a href="#" class="btn-catalog"><img src="img/map_catalog.svg" alt="alt">а карте</a>
-					</div>
-				</div>
-				<div class="row row_main">
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+					<div class="tab-pane" id="tab_selection2">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">340 000 000 ₽</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag2.svg" alt="alt">Скидка</div></li>
+					<div class="tab-pane" id="tab_selection3">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-old">340 000 000 ₽</div>
-										<div class="price-main">340 000 000 ₽ <span>↓</span></div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag3.svg" alt="alt">Эксклюзив</div></li>
+					<div class="tab-pane" id="tab_selection4">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">Цена по запросу</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+					<div class="tab-pane" id="tab_selection5">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">340 000 000 ₽</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag2.svg" alt="alt">Скидка</div></li>
+					<div class="tab-pane" id="tab_selection6">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-old">340 000 000 ₽</div>
-										<div class="price-main">340 000 000 ₽ <span>↓</span></div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag3.svg" alt="alt">Эксклюзив</div></li>
+					<div class="tab-pane" id="tab_selection7">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">Цена по запросу</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
+						</div>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+					<div class="tab-pane" id="tab_selection8">
+						<div class="title-main">По району</div>
+						<ul class="list-letters">
+							<li><a href="#">Популярное</a></li>
+							<li><a href="#">А</a></li>
+							<li><a href="#">Б</a></li>
+							<li><a href="#">В</a></li>
+							<li><a href="#">Г</a></li>
+							<li><a href="#">Д</a></li>
+							<li><a href="#">Е</a></li>
+							<li><a href="#">Ж</a></li>
+							<li><a href="#">И</a></li>
+							<li><a href="#">К</a></li>
+							<li><a href="#">Л</a></li>
+							<li><a href="#">М</a></li>
+							<li><a href="#">Н</a></li>
+							<li><a href="#">О</a></li>
+							<li><a href="#">П</a></li>
+							<li><a href="#">Р</a></li>
+							<li><a href="#">С</a></li>
+							<li><a href="#">Т</a></li>
+							<li><a href="#">У</a></li>
+							<li><a href="#">Х</a></li>
+							<li><a href="#">Ц</a></li>
+							<li><a href="#">Ч</a></li>
+							<li><a href="#">Ш</a></li>
+							<li><a href="#">Щ</a></li>
+							<li><a href="#">Э</a></li>
+							<li><a href="#">Ю</a></li>
+							<li><a href="#">Я</a></li>
+						</ul>
+						<div class="title-main">Попурярное</div>
+						<ul class="list-selections">
+							<li><a href="#">Хамовники (1185 ЖК)</a></li>
+							<li><a href="#">Пресненский (815 ЖК)</a></li>
+							<li><a href="#">Арбат (85 ЖК)</a></li>
+							<li><a href="#">ЦАО (850 ЖК)</a></li>
+							<li><a href="#">ЗАО (85 ЖК)</a></li>
+						</ul>
+						<div class="unit-letter">
+							<div class="unit-letter__value">А</div>
+							<ul>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
+								<li><a href="#">Академический (5 ЖК)</a></li>
+								<li><a href="#">Алексеевский (27 ЖК)</a></li>
+								<li><a href="#">Арбат (241 ЖК)</a></li>
+								<li><a href="#">Аэропорт (85 ЖК)</a></li>
+								<li><a href="#">Аалто (5 ЖК)</a></li>
+								<li><a href="#">Абрикосов (27 ЖК)</a></li>
+								<li><a href="#">Авангард (241 ЖК)</a></li>
+								<li><a href="#">Авентин (85 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">340 000 000 ₽</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag2.svg" alt="alt">Скидка</div></li>
+						<div class="unit-letter">
+							<div class="unit-letter__value">В</div>
+							<ul>
+								<li><a href="#">ВАО (5 ЖК)</a></li>
+								<li><a href="#">Войковский (7 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-old">340 000 000 ₽</div>
-										<div class="price-main">340 000 000 ₽ <span>↓</span></div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag3.svg" alt="alt">Эксклюзив</div></li>
+						<div class="unit-letter">
+							<div class="unit-letter__value">К</div>
+							<ul>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
+								<li><a href="#">Коптево (1 ЖК)</a></li>
+								<li><a href="#">Котловка (2 ЖК)</a></li>
+								<li><a href="#">Красносельский (113 ЖК)</a></li>
+								<li><a href="#">Крылатское (27 ЖК)</a></li>
 							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">Цена по запросу</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="block-help">
-					<div class="block-help__content">
-						<div class="title-section">Помощь брокера</div>
-						<div class="title-main">Поможем найти, купить или продать недвижимость</div>
-					</div>
-					<a href="#" class="btn-main btn-main_page">Получить консультацию</a>
-				</div>
-				<div class="row row_main">
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">340 000 000 ₽</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag2.svg" alt="alt">Скидка</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-old">340 000 000 ₽</div>
-										<div class="price-main">340 000 000 ₽ <span>↓</span></div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag3.svg" alt="alt">Эксклюзив</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">Цена по запросу</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">340 000 000 ₽</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag2.svg" alt="alt">Скидка</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-old">340 000 000 ₽</div>
-										<div class="price-main">340 000 000 ₽ <span>↓</span></div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag3.svg" alt="alt">Эксклюзив</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">Цена по запросу</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">340 000 000 ₽</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag2.svg" alt="alt">Скидка</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-old">340 000 000 ₽</div>
-										<div class="price-main">340 000 000 ₽ <span>↓</span></div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag">Квартира</div></li>
-								<li><div class="item-tag"><img src="img/tag3.svg" alt="alt">Эксклюзив</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<ul class="item-catalog__slider">
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-								<li>
-									<div class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-									</div>
-								</li>
-							</ul>
-							<div class="item-catalog__content">
-								<div class="item-catalog__articul">Лот №123456</div>
-								<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-								<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
-								<div class="features">
-									<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
-									<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
-									<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
-									<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
-								</div>
-								<div class="item-catalog__bottom">
-									<div class="wrap-prices">
-										<div class="price-main">Цена по запросу</div>
-									</div>
-									<a href="#" class="btn-main btn-main_page">Узнать подробности</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="btn-more">Показать еще</a>
-				<div class="pager">
-					<a class="prev page-numbers" href="#"><i class="far fa-chevron-left"></i></a>
-					<span aria-current="page" class="page-numbers current" href="#">1</span> 
-					<a class="page-numbers" href="#">2</a> 
-					<a class="page-numbers" href="#">3</a> 
-					<a class="next page-numbers" href="#"><i class="far fa-chevron-right"></i></a>
-				</div>
-				<div class="help-form">
-					<div class="row">
-						<div class="col-xl-4">
-							<h2 class="title-section">Помощь брокера</h2>
-							<div class="title-main">Поможем найти, купить или продать недвижимость</div>
-						</div>
-						<div class="col-xl-6 col-md-8">
-							<div class="help-form__form">
-								<form>
-									<div class="row">
-										<div class="col-md-6">
-											<div class="item-form item-form_page">
-												<input type="text" placeholder="Имя" required="required">
-												<div class="error-text">Заполните поле</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="item-form item-form_page">
-												<input type="text" placeholder="Телефон" class="input-phone" required="required">
-												<div class="error-text">Заполните поле</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<input type="submit" value="Получить консультацию" class="btn-main btn-main_page">
-										</div>
-										<div class="col-md-6 align-self-center">
-											<div class="agree-form">Нажимая на кнопку «отправить», вы соглашаетесь с <a href="#">условиями обработки персональных данных</a> </div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="col-xl-2 col-md-4">
-							<div class="contacts__right">
-								<div class="title-socials">Или свяжитесь с нами любым удобным способом</div>
-								<ul class="list-social">
-									<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
-									<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
-									<li><a href="#" target="_blank"><img src="img/vb.svg" alt="alt"></a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -1316,7 +850,7 @@
 
 		<a href="#" class="btn-more-about">Читать еще</a>
 
-		<section class="collections">
+		<section class="collections hidden-mob">
 			<div class="container">
 				<div class="row catalog__top">
 					<div class="col-xl-6">

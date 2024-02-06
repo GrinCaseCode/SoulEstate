@@ -315,10 +315,21 @@ $('.btn-tab').click(function() {
 	
 
 	$('.item-form select').select2({
+		closeOnSelect : true,
+		allowClear: false,
+		containerCssClass: "test",
+		tags: true,
+	});
+	
+	$('.item-form_multiple select').select2({
 		closeOnSelect : false,
 		allowClear: false,
-		tags: true 
+		containerCssClass: "test",
+		tags: true,
+		theme: "custom-option-select"
 	});
+
+
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto

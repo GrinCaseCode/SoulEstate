@@ -643,6 +643,56 @@
     .item-form.item-form_middle {
         width: 190px;
     }
+    .page-selections .title-main {
+        padding-top: 40px;
+        padding-bottom: 23px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .list-letters a {
+        padding: 0 8px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 13px;
+    }
+    .list-letters li {
+        margin-right: 5px;
+    }
+    .list-selections li {
+        margin-right: 28px;
+    }
+    .unit-letter {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .page-selections.catalog {
+        padding-bottom: 140px;
+    }
+    .page-selections ~ .collections {
+        padding-bottom: 120px;
+    }
+    .item-form .select2-container--custom-option-select .select2-selection textarea {
+        height: 42px;
+        padding-top: 12px;
+        padding-left: 8px;
+    }
+    .select2-selection__arrow::before, .select2-selection--multiple::before {
+        right: 4px;
+        font-size: 10px;
+    }
+    .select2-dropdown {
+        font-size: 13px;
+    }
+    .billbord__bottom .list-social svg {
+        width: 47px;
+        height: 48px;
+    }
+    .billbord__bottom .list-social li {
+        margin-bottom: 5px;
+    }
+    .billbord__bottom .list-social {
+        margin-left: 15px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -1185,6 +1235,31 @@
     }
     .page-favorites {
         padding-bottom: 100px;
+    }
+    .page-selections .title-main {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .page-selections .title-section {
+        padding-bottom: 25px;
+    }
+    .item-form_prices .select2-container--default .select2-selection--single .select2-selection__rendered, .item-form_prices.item-form .select2-selection {
+        min-height: 36px;
+    }
+    .billbord__bottom .list-social {
+        right: 15px;
+        margin: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        left: auto;
+        justify-content: center;
+    }
+    .billbord__bottom .list-social:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -2051,7 +2126,7 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .select2-results__option--selectable {
+    .select2-container--custom-option-select .select2-results__option--selectable {
         padding-left: 27px;
         margin-bottom: 11px;
     }
@@ -2061,15 +2136,86 @@
         font-size: 14px;
         line-height: 20px;
     }
-    .select2-results__option--selectable::after, .select2-results__option--selectable::before {
+    .select2-container--custom-option-select .select2-results__option--selectable::after, 
+    .select2-container--custom-option-select .select2-results__option--selectable::before {
         width: 20px;
         height: 20px;
     }
-    .select2-results__option--selectable::after {
+    .select2-container--custom-option-select .select2-results__option--selectable::after {
         font-size: 10px;
     }
     .item-form_prices .select2-container--default .select2-selection--single .select2-selection__rendered, .item-form_prices.item-form .select2-selection {
         min-height: 35px;
+    }
+    .page-selections .title-section {
+        padding-bottom: 8px;
+    }
+    .page-selections .title-main {
+        font-size: 24px;
+        padding-top: 33px;
+        padding-bottom: 16px;
+    }
+    .list-selections {
+        display: block;
+    }
+    .list-selections li {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .unit-letter ul {
+        display: block;
+    }
+    .unit-letter ul li:nth-child(n+5) {
+        display: none;
+    }
+    .list-letters {
+        overflow: auto;
+        margin-right: -15px;
+        padding-bottom: 5px;
+        flex-wrap: nowrap;
+    }
+    .page-selections .tab-pane {
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+    .list-letters a {
+        padding: 0px 14px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 16px;
+    }
+    .list-letters::-webkit-scrollbar {
+        -webkit-appearance: none;
+      }
+      .list-letters::-webkit-scrollbar:vertical {
+        width: 0px;
+      }
+      .list-letters::-webkit-scrollbar:horizontal {
+        height: 0px;
+      }
+      .list-letters::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 10px;
+      }
+      .list-letters::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .unit-letter {
+        padding-bottom: 10px;
+    }
+    .page-selections.catalog {
+        padding-bottom: 50px;
+    }
+    .unit-letter:last-child {
+        border: none;
+    }
+    .billbord__bottom .list-social {
+        right: -5px;
+    }
+    .billbord__bottom .list-social svg {
+        width: 37px;
+        height: 37px;
     }
 }
 
@@ -2107,6 +2253,43 @@
     .show-mobile {
         display: none !important;
     }
+
+    .page-selections .tabs {
+        padding: 0;
+        background: transparent;
+    }
+    .page-selections .tabs a {
+        background: #f6f6f6;
+    }
+    .page-selections .tabs a {
+        padding: 9px 16px;
+        border-radius: 6px;
+    }
+    .page-selections .tabs li {
+        margin-right: 10px;
+    }
+    .page-selections .tabs .active a,
+    .page-selections .tabs a:hover,
+    .page-selections .tabs .firstActive a {
+        background: #2A2A2A !important;
+        color: #fff !important;
+    }
+    .page-selections .tabs::before {
+        display: none;
+    }
+    .page-selections .tabs {
+        flex-wrap: wrap;
+    }
+    .page-selections .tabs a {
+        padding: 7px 6px;
+        border-radius: 4px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .page-selections .tabs li {
+        margin-right: 6px;
+        margin-bottom: 5px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -2133,10 +2316,27 @@
 .menu {
     display: flex !important;
 }
+.page-selections .tabs a {
+    padding: 10px 9px;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 140%;
+}
+.page-selections .tabs li {
+    margin-right: 5px;
+}
 }
 @media (min-width: 1660px) {
 	.container {
     max-width: 1630px;
+}
+
+.page-selections .tabs a {
+    padding: 9px 16px;
+    border-radius: 6px;
+}
+.page-selections .tabs li {
+    margin-right: 10px;
 }
 }
 
