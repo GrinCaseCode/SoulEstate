@@ -693,6 +693,403 @@
     .billbord__bottom .list-social {
         margin-left: 15px;
     }
+    .item-form_prices .select2-container--default .select2-selection--single .select2-selection__rendered, .item-form_prices.item-form .select2-selection {
+        min-height: 36px;
+    }
+    .item-form_prices .select2-container {
+        width: 40px !important;
+    }
+    .breadcrumbs {
+        padding-bottom: 25px;
+        font-size: 13px;
+    }
+    .page-card .title-section {
+        padding-bottom: 30px;
+    }
+    .slider-for__item {
+        height: 410px;
+    }
+    .slider-nav__item {
+        margin: 0 4px;
+        height: 97px;
+    }
+    .slider-nav {
+        margin: 0 -4px;
+        margin-top: 15px;
+    }
+    .slider-nav__item img,
+    .slider-nav__item {
+        border-radius: 18px;
+    }
+    .tabs-card a {
+        padding: 9px 16px;
+        font-size: 14px;
+    }
+    .tabs-card li {
+        margin-right: 4px;
+    }
+    .tabs-card {
+        top: 12px;
+        left: 12px;
+        padding: 6px;
+    }
+    .tabs-card a img {
+        margin-right: 7px;
+        max-height: 14px;
+    }
+    .sliders-card {
+        margin-bottom: 35px;
+    }
+    .text-main {
+        font-size: 16px;
+    }
+    .page-card .text-main {
+        margin-bottom: 17px;
+    }
+    .text-main ul, 
+    .text-main ol {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .title-main {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .card-features .title-main {
+        margin-bottom: 27px;
+    }
+    .card-features {
+        padding: 24px 25px;
+        padding-bottom: 15px;
+        border-radius: 20px;
+    }
+    .ic-feature {
+        width: 20px;
+        height: 20px;
+    }
+    .list-features li {
+        padding-left: 33px;
+        margin-bottom: 18px;
+    }
+    .list-features {
+        font-size: 16px;
+    }
+    .card-articul {
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+    .card-info .tags-catalog {
+        margin-bottom: 19px;
+    }
+    .card-location {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    .card-location span {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .item-currency span {
+        min-width: 33px;
+        height: 33px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+    .item-currency {
+        margin-right: 2px;
+    }
+    .wrap-currencies {
+        margin-right: 32px;
+        padding: 4px;
+    }
+    .btn-simple, 
+    .btn-prices {
+        padding: 3px 7px;
+        padding-right: 9px;
+        font-size: 13px;
+    }
+    .card-prices {
+        margin-right: 20px;
+    }
+    .price-card {
+        font-size: 24px;
+        margin-bottom: -2px;
+    }
+    .price-card-old {
+        font-size: 14px;
+    }
+    .price-card-old sup {
+        font-size: 9px;
+    }
+    .card-info__line {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+    .form-card {
+        padding: 22px 25px;
+        padding-bottom: 35px;
+        border-radius: 20px;
+    }
+    .form-card__phone {
+        font-size: 25px;
+    }
+    .socials-form .title-socials,
+    .form-card .title-socials {
+        font-size: 14px;
+        margin-bottom: 9px;
+    }
+    .presentation-block .list-social label svg,
+    .form-card .list-social label svg {
+        width: 46px;
+        height: 46px;
+    }
+    .form-card__socials {
+        margin-top: 8px;
+    }
+    .form-card__head {
+        margin-bottom: 23px;
+    }
+    .form-card .row > div {
+        padding: 0 8px;
+    }
+    .form-card .row {
+        margin: 0 -8px;
+    }
+    .form-card .btn-main {
+        font-size: 14px;
+    }
+    .form-card .agree-form {
+        margin-top: 22px;
+    }
+    .page-card {
+        padding-bottom: 140px;
+    }
+    .about-card .title-section {
+        padding-bottom: 32px;
+    }
+    .about-card .about-card__left {
+        padding-right: 60px;
+    }
+    .about-card .links-wrap {
+        margin-top: 45px;
+    }
+    .links-wrap .btn-simple {
+        margin-right: 13px;
+    }
+    .about-card__image img,
+    .about-card__image {
+        border-radius: 20px;
+    }
+    .about-card__image {
+        margin-bottom: 25px;
+    }
+    .presentation {
+        padding: 140px 0;
+    }
+    .modal-price {
+        padding: 25px 25px;
+        border-radius: 20px;
+        width: 480px;
+        margin-top: 14px;
+    }
+    .modal-price__close {
+        top: 12px;
+        right: 12px;
+    }
+    .modal-price__title {
+        font-size: 19px;
+        margin-bottom: 22px;
+    }
+    .presentation-block .title-section {
+        margin-bottom: 30px;
+        max-width: 580px;
+    }
+    .presentation-block {
+        min-height: 420px;
+        padding: 35px 45px;
+        padding-right: 65px;
+        background-position: 80% 50%;
+    }
+    .presentation-block .title-small {
+        max-width: 390px;
+    }
+    .socials-form .title-socials {
+        margin-bottom: 0;
+    }
+    .presentation-block__form {
+        max-width: 266px;
+    }
+    .presentation-block__form .btn-main {
+        margin-top: 24px;
+    }
+    .socials-form {
+        padding-top: 0;
+    }
+    .name-infrastructure {
+        padding: 8px 18px;
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    .link-infrastructure {
+        font-size: 16px;
+    }
+    .nav-infrastructure ul li {
+        margin-bottom: 8px;
+    }
+    #map-infrastructure {
+        height: 470px;
+    }
+    .calculation {
+        padding: 135px 0;
+    }
+    .calculation-form {
+        padding: 38px 80px;
+        font-size: 14px;
+    }
+    .calculation-form .row > div {
+        padding: 0 8px;
+    }
+    .calculation-form .row {
+        margin: 0 -8px;
+    }
+    .unit-calculation__value {
+        font-size: 28px;
+        margin-top: -1px;
+    }
+    .recommendation .title-section {
+        padding-bottom: 45px;
+    }
+    .recommendation .title-main {
+        padding-top: 55px;
+    }
+    .tabs-links a {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+    .tabs-links li {
+        margin-bottom: 4px;
+        margin-right: 4px;
+    }
+    .recommendation + .consultation {
+        padding-top: 70px;
+    }
+    .page-card ~ .help {
+        padding-bottom: 140px;
+    }
+    .about + .news {
+        padding-top: 105px;
+    }
+    .slider-news {
+        margin: 0 -8px;
+    }
+    .slider-news > .slick-list > .slick-track > .slick-slide {
+        padding: 0 8px;
+    }
+    .card-info {
+        top: 110px;
+    }
+    .billbord__form {
+        width: 610px;
+        padding: 18px 20px;
+        margin-bottom: 19px;
+        padding-bottom: 15px;
+        border-radius: 20px;
+    }
+    .billbord__bottom-form .title-small {
+        margin-bottom: 20px;
+        max-width: 490px;
+    }
+    .billbord__descr {
+        font-size: 19px;
+        margin-top: 9px;
+    }
+    .billbord__location {
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    .about-top {
+        padding-top: 110px;
+    }
+    .about-top .tabs-wrap {
+        margin-bottom: 50px;
+    }
+    .about-top .title-section {
+        padding-bottom: 35px;
+    }
+    .slider-images__item {
+        height: 375px;
+    }
+    .slider-gallery .slick-prev, .slider-images .slick-prev {
+        left: -70px;
+    }
+    .slider-gallery .slick-next, .slider-images .slick-next {
+        right: -70px;
+    }
+    .about-top .text-main {
+        font-size: 15px;
+    }
+    .about-top .text-main p {
+        margin-bottom: 12px;
+    }
+    .about-top .about-top__left {
+        padding-right: 70px;
+    }
+    .features-info .title-main {
+        margin-bottom: 35px;
+    }
+    .features-info__item {
+        padding-left: 37px;
+        font-size: 14px;
+    }
+    .features-info__icon {
+        width: 23px;
+        height: 23px;
+    }
+    .features-info__title {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+    .presentation_knightsbridge .presentation-block .title-small {
+        max-width: 318px;
+    }
+    .catalog_selection .title-section {
+        padding-bottom: 35px;
+    }
+    .catalog .line-filter .item-form {
+        margin-right: 17px;
+    }
+    .catalog .line-filter .item-form {
+        width: 180px;
+    }
+    .catalog .line-filter .item-form:nth-child(5),
+    .catalog .line-filter .item-form:nth-child(4) {
+	    width: 200px;
+    }
+    .consultation_knightsbridge {
+        padding-top: 150px;
+    }
+    .slider-gallery {
+        margin: 0 -10px;
+    }
+    .slider-gallery .slick-slide {
+        padding: 0 10px;  
+    }
+    .slider-gallery .slick-prev {
+        left: -65px;
+    }
+    .slider-gallery .slick-next {
+        right: -65px;
+    }
+    .gallery {
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+    .slider-gallery__item {
+        height: 320px;
+    }
+    .gallery ~ .collections {
+        padding-bottom: 115px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -1261,6 +1658,258 @@
     .billbord__bottom .list-social:last-child {
         margin-bottom: 0;
     }
+    .tab-container-map {
+        width: 100%;
+        position: relative;
+    }
+    .tab-pane-map {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+    #map-catalog {
+        height: 400px;
+    }
+    .list-catalog {
+        margin: 0 -5px;
+        height: auto;
+        overflow: initial;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list-catalog li {
+        width: 50%;
+        margin-bottom: 10px;
+        padding: 0 5px;
+    }
+    .tab-container-map .item-catalog {
+        margin: 0;
+        min-height: 100%;
+    }
+    .item-form.select-sorting .select2-selection {
+        min-height: 49px;
+    }
+    .select-sorting .select2-container--custom-option-select .select2-selection__rendered, 
+    .select-sorting .select2-container--default .select2-selection--single .select2-selection__rendered, 
+    .select-sorting.item-form .select2-selection {
+        min-height: 49px;
+        font-size: 15px;
+    }
+    .buttons-catalog .item-form {
+        min-width: 150px;
+        margin-right: 10px;
+    }
+    .select-sorting .select2-container .select2-selection--single .select2-selection__rendered {
+        padding-right: 18px;
+        padding-left: 47px;
+        background-position: left 14px center;
+    }
+    .wrapper_page {
+        overflow: hidden;
+    }
+    .card-features {
+        margin-bottom: 20px;
+    }
+    .page-card {
+        padding-bottom: 80px;
+    }
+    .about-card .about-card__left {
+        padding-right: 8px;
+        padding-bottom: 15px;
+    }
+    .about-card .links-wrap {
+        margin-top: 16px;
+    }
+    .hidden-tablet {
+        display: none;
+    }
+    .slider-photos-card__item {
+        height: 450px;
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+    .slider-photos-card__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        border-radius: 24px;
+    }
+    .slider-photos-card {
+        margin-bottom: 50px;
+    }
+    .presentation {
+        padding: 80px 0;
+    }
+    .presentation-block {
+        padding: 32px;
+        min-height: 498px;
+        background-image: url(../img/bg_presentation_mob.svg);
+        margin: 0;
+        background-position: 50% 23%;
+    }
+    .presentation-block__bg {
+        display: none;
+    }
+    .presentation-block__form {
+        max-width: 100%;
+        margin: 0;
+    }
+    .presentation-block__image {
+        display: block;
+        margin-bottom: -90px;
+    }
+    .presentation-block .item-form.item-form_page input {
+        background: #f7a479 !important;
+    }
+    .presentation-block__image img {
+        margin: 0 auto;
+    }
+    .col_infrastructure {
+        order: -1;
+    }
+    .nav-infrastructure {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow: auto;
+        margin-right: -15px;
+    }
+    .nav-infrastructure::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    .nav-infrastructure::-webkit-scrollbar:vertical {
+        width: 1px;
+    }
+    .nav-infrastructure::-webkit-scrollbar:horizontal {
+        height: 1px;
+    }
+    .nav-infrastructure::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .nav-infrastructure::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    .name-infrastructure {
+        margin: 0;
+        margin-right: 8px;
+        white-space: nowrap;
+    }
+    .nav-infrastructure {
+        padding-bottom: 190px;
+    }
+    .nav-infrastructure li ul {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        height: 158px;
+        padding: 0;
+        padding-top: 10px;
+        width: 100%;
+        overflow: auto;
+    }
+    .nav-infrastructure ul li {
+        margin-bottom: 15px;
+    }
+    .nav-infrastructure li ul::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    .nav-infrastructure li ul::-webkit-scrollbar:vertical {
+        width: 3px;
+    }
+    .nav-infrastructure li ul::-webkit-scrollbar:horizontal {
+        height: 3px;
+    }
+    .nav-infrastructure li ul::-webkit-scrollbar-thumb {
+        background-color: #2A2A2A;
+        border-radius: 10px;
+    }
+    .nav-infrastructure li ul::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ccc;
+    }
+    #map-infrastructure {
+        height: 400px;
+    }
+    .calculation {
+        padding: 95px 0;
+    }
+    .calculation-form {
+        padding: 38px 40px;
+    }
+    .unit-calculation {
+        margin-bottom: 15px;
+    }
+    .recommendation + .consultation {
+        padding-top: 50px;
+    }
+    .page-card ~ .help {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+    .slider-news .slick-dots {
+        bottom: 0;
+    }
+    .slider-news {
+        padding-bottom: 35px;
+    }
+    .about-top .tabs a {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+    .about-top {
+        padding-top: 85px;
+    }
+    .about-top .slider-images {
+        margin-top: 30px;
+    }
+    .features-info {
+        padding: 30px 25px;
+        padding-bottom: 5px;
+        margin-top: 70px;
+    }
+    .col-main {
+        width: 50%;
+    }
+    .features-info__item {
+        margin-bottom: 30px;
+    }
+    .catalog .line-filter .item-form {
+        width: 48%;
+        margin-right: 0;
+    }
+    .catalog .line-filter {
+        justify-content: space-between;
+    }
+    .catalog .line-filter .item-form:nth-child(5), 
+    .catalog .line-filter .item-form:nth-child(4) {
+        width: 48%;
+    }
+    .catalog .line-filter .item-form:nth-child(1) {
+        width: 100%;
+    }
+    .catalog .line-filter .btn-main {
+        margin: 0;
+        width: 100%;
+    }
+    .catalog .filter-main {
+        padding-bottom: 20px;
+    }
+    .gallery {
+        padding-top: 85px;
+        padding-bottom: 90px;
+    }
+    .gallery .title-section {
+        padding-bottom: 40px;
+    }
+    .gallery ~ .collections {
+        padding-bottom: 90px;
+    }
+
 }
 
 
@@ -1719,7 +2368,7 @@
     .modal-wrap {
         width: 100vw;
     }
-    .fancybox-wrap {
+    .fancybox-wrap:not(.fancybox-main) {
         left: 0 !important;
         right: 0 !important;
         width: 100% !important;
@@ -1993,9 +2642,6 @@
     .footer__menu li {
         margin-bottom: 5px;
     }
-    .billbord .breadcrumbs {
-        display: none;
-    }
     .billbord_catalog.billbord_main .billbord__content {
         padding-top: 105px;
     }
@@ -2003,7 +2649,7 @@
         flex: 1;
     }
     .buttons-catalog {
-        margin-top: 46px;
+        margin-top: 40px;
     }
     .page-catalog {
         padding-top: 64px;
@@ -2220,11 +2866,436 @@
     .page-selections.catalog ~ .btn-more-about {
         margin-bottom: 40px;
     }
+    .list-catalog li {
+        width: 100%;
+    }
+    .slider-for__item {
+        height: 289px;
+    }
+    .slider-nav {
+        display: none !important;
+    }
+    .tabs-card {
+        display: none;
+    }
+    .sliders-card {
+        margin-bottom: 15px;
+    }
+    .card-articul {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .card-info .tags-catalog {
+        margin-bottom: 23px;
+    }
+    .card-location {
+        font-size: 16px;
+    }
+    .card-location span {
+        margin-left: 11px;
+        font-size: 14px;
+    }
+    .card-info .features__item {
+        margin-right: 24px;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+    .card-info .features {
+        max-width: 260px;
+        margin-top: 0;
+    }
+    .card-info__line {
+        flex-wrap: wrap;
+    }
+    .wrap-currencies {
+        margin-right: 100px;
+        margin-bottom: 16px;
+    }
+    .btn-price-wrap {
+        margin-left: auto;
+    }
+    .card-info__line {
+        max-width: 333px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .modal-price {
+        padding: 22px 14px;
+        border-radius: 20px;
+        width: 335px;
+        margin-top: 12px;
+    }
+    .modal-price__close {
+        top: 7px;
+        right: 9px;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+    .modal-price__title {
+        font-size: 17px;
+        margin-bottom: 21px;
+    }
+    .modal-price__line .btn-main {
+        margin-left: 8px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .form-card__head {
+        display: block;
+    }
+    .form-card__phone {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .presentation-block .list-social label svg, .form-card .list-social label svg {
+        width: 56px;
+        height: 56px;
+    }
+    .socials-form .title-socials, .form-card .title-socials {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .form-card {
+        padding: 14px 16px;
+        padding-bottom: 30px;
+    }
+    .form-card .btn-main {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .form-card .btn-main_page {
+        margin-bottom: 0;
+    }
+    .card-info {
+        top: 0;
+        margin-bottom: 64px;
+    }
+    .page-card .text-main {
+        margin-bottom: 32px;
+    }
+    .list-features {
+        font-size: 18px;
+        columns: initial;
+    }
+    .card-features {
+        padding: 18px 24px;
+        margin-bottom: 0;
+    }
+    .list-features li {
+        padding-left: 38px;
+        margin-bottom: 20px;
+    }
+    .ic-feature {
+        width: 26px;
+        height: 26px;
+    }
+    .card-features .title-main {
+        font-size: 26px;
+        margin-bottom: 23px;
+    }
+    .page-card {
+        padding-bottom: 60px;
+    }
+    .list-features > li:nth-child(n+11) {
+        display: none;
+    }
+    .btn-more-features {
+        height: 48px;
+        margin-top: 32px;
+        background: #f6f6f6;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 122%;
+        color: #2a2a2a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .btn-more-features:hover {
+        background: #f37d40;
+        color: #fff;
+        border-color: #f37d40;
+    }
+    .slider-photos-card__item {
+        height: 280px;
+    }
+    .links-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links-wrap .btn-simple {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+    .btn-simple, .btn-prices {
+        padding: 4px 9px;
+        padding-right: 11px;
+        font-size: 14px;
+    }
+    .btn-simple {
+        padding: 6px 12px;
+        padding-right: 13px;
+    }
+    .about-card .about-card__left {
+        padding-bottom: 0;
+    }
+    .presentation {
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+    .presentation-block {
+        padding: 20px 15px;
+    }
+    .presentation-block .title-section {
+        font-size: 24px;
+        line-height: 125%;
+    }
+    .presentation-block .title-section sup {
+        font-size: 13px;
+    }
+    .presentation-block .title-small {
+        font-size: 14px;
+        line-height: 129%;
+    }
+    .presentation-block__image {
+        margin-top: -40px;
+        margin-left: -18px;
+        pointer-events: none;
+    }
+    .socials-form .title-socials {
+        margin-bottom: 0;
+    }
+    .presentation-block__form {
+        color: #2a2a2a;
+    }
+    .presentation-block__form .agree-form a {
+        color: #2a2a2a;
+        border-color: #2a2a2a;
+    }
+    .presentation-block__form .agree-form a:hover {
+        border-color: transparent;
+    }
+    #map-infrastructure {
+        height: 483px;
+    }
+    .calculation {
+        padding: 63px 0;
+    }
+    .calculation-form {
+        padding: 22px 16px;
+        font-size: 16px;
+    }
+    .unit-calculation__value {
+        font-size: 32px;
+    }
+    .calculation-form .title-main {
+        margin-bottom: 24px;
+    }
+    .calculation-form .item-form.item-form_page input {
+        height: 48px;
+        border-radius: 12px;
+    }
+    .calculation-form .item-form {
+        margin-bottom: 8px;
+    }
+    .unit-calculation {
+       margin-top: 10px;
+       margin-bottom: 0;
+    }
+    .col_agree {
+        order: 2;
+    }
+    .calculation-form .agree-form {
+        margin-top: 16px;
+    }
+    .calculation-form .btn-main {
+        margin-top: 15px;
+    }
+    .recommendation .title-section {
+        padding-bottom: 32px;
+    }
+    .tabs-links {
+        display: block;
+    }
+    .tabs-links a {
+        padding: 9px 19px;
+        font-size: 16px;
+    }
+    .tabs-links li {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+    .page-card ~ .help {
+        padding: 64px 0;
+    }
+    .section-help .block-help .title-section {
+        font-size: 20px;
+    }
+    .about + .news {
+        padding-top: 64px;
+        padding-bottom: 50px;
+    }
+    .slider-news .item-news {
+        min-height: initial;
+    }
+    .slider-news > .slick-list > .slick-track {
+        display: block !important;
+    }
+    .fancybox-main .fancybox-close {
+        top: 5px;
+        right: 5px;
+        width: 35px;
+        height: 35px;
+    }
+    .billbord__location {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .billbord__descr {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    .billbord .breadcrumbs {
+        margin-top: -40px;
+    }
+    .billbord__bottom-form .title-small {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 150%;
+    }
+    .billbord__bottom-form .title-small br {
+        display: none;
+    }
+    .billbord__form .btn-main {
+        margin-top: 0;
+    }
+    .billbord__form .agree-form {
+        margin-top: 20px;
+    }
+    .billbord__form {
+        padding: 15px;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .about-top {
+        padding-top: 64px;
+    }
+    .about-top .tabs-wrap {
+        margin: 0;
+        margin-bottom: 32px;
+        display: block;
+    }
+    .about-top .tabs a {
+        padding: 5px 8px;
+        font-size: 16px;
+    }
+    .about-top .title-section {
+        padding-bottom: 40px;
+    }   
+    .about-top .about-top__left {
+        padding-right: 8px;
+    }
+    .about-top .slider-images {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .features-info {
+        padding: 20px 24px;
+        padding-bottom: 5px;
+        margin-top: 50px;
+    }
+    .features-info .title-main {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .col-main {
+        width: 100%;
+    }
+    .features-info__item {
+        padding-left: 50px;
+        font-size: 16px;
+    }
+    .features-info__icon {
+        width: 30px;
+        height: 30px;
+    }
+    .features-info__title {
+        font-size: 24px;
+    }
+    .about-top {
+        padding-bottom: 20px;
+    }
+    .presentation_knightsbridge .title-section br {
+        display: none;
+    }
+    .presentation_knightsbridge .presentation-block .title-small {
+        max-width: 242px;
+    }
+    .presentation_knightsbridge .title-section {
+        margin-bottom: 25px;
+        max-width: 304px;
+    }
+    .catalog .filter-main {
+        margin-top: 0;
+    }
+    .catalog .line-filter .item-form {
+        width: 49% !important;
+    }
+    .catalog .line-filter .item-form:nth-child(1) {
+        width: 100% !important;
+    }
+    .catalog .select2-selection__arrow::before, 
+    .catalog .select2-selection--multiple::before {
+        right: 0px;
+    }
+    .catalog .line-filter .btn-main {
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+    .catalog_selection .title-section {
+        padding-bottom: 19px;
+    }
+    .catalog_selection .title-main {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+    .catalog_selection .row_main > div:nth-child(n+4) {
+        display: none;
+    }
+    .catalog_selection .pager {
+        display: none;
+    }
+    .consultation_knightsbridge .consultation-block .title-section br {
+        display: none;
+    }
+    .consultation_knightsbridge .consultation-block .title-section {
+        max-width: 302px;
+        margin-bottom: 140px;
+    }
+    .gallery {
+        padding: 64px 0;
+    }
+    .gallery .title-section {
+        padding-bottom: 35px;
+    }
+    .gallery ~ .collections {
+        padding-bottom: 64px;
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .slider-gallery__item,
+    .slider-images__item,
+    .slider-photos-card__item,
+    .slider-for__item {
+        height: 232px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -2328,6 +3399,9 @@
 .page-selections .tabs li {
     margin-right: 5px;
 }
+.slider-photos-card {
+    display: none !important;
+  }
 }
 @media (min-width: 1660px) {
 	.container {
@@ -2341,6 +3415,7 @@
 .page-selections .tabs li {
     margin-right: 10px;
 }
+
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {
@@ -2377,4 +3452,5 @@
         border-radius: 10px;
         background-color: #ccc;
       }
+
 }

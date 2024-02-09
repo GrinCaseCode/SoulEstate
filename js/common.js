@@ -208,6 +208,128 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
 	});
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					dots: true,
+				}
+			}
+			]
+		});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+				}
+			}
+			]
+		});
+
+		$('.slider-photos-card').slick({
+			arrows: false,
+			dots: true,
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			touchThreshold: 1000,
+			focusOnSelect: true,
+			prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+		});
+
+		$('.slider-news').slick({
+			arrows: true,
+			dots: false,
+			infinite: false,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			prevArrow: '<div class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" transform="matrix(-1 0 0 1 80 0)" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29 37.1133L24 40L29 42.8868V40.5H56V39.5H29V37.1133Z" fill="#2A2A2A"/></svg><div/>',
+			nextArrow: '<div class="slick-next slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51 37.1133L56 40L51 42.8868V40.5H24V39.5H51V37.1133Z" fill="#2A2A2A"/></svg><div/>',
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
+						arrows: false,
+						dots: true,
+					}
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						arrows: false,
+						dots: true,
+						adaptiveHeight: true
+					}
+				}
+				]
+			});
+
+			$('.slider-images').slick({
+				arrows: true,
+				dots: false,
+				infinite: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: '<div class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" transform="matrix(-1 0 0 1 80 0)" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29 37.1133L24 40L29 42.8868V40.5H56V39.5H29V37.1133Z" fill="#2A2A2A"/></svg><div/>',
+				nextArrow: '<div class="slick-next slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51 37.1133L56 40L51 42.8868V40.5H24V39.5H51V37.1133Z" fill="#2A2A2A"/></svg><div/>',
+				responsive: [
+					{
+						breakpoint: 1200,
+						settings: {
+							arrows: false,
+							dots: true,
+						}
+					}
+					]
+				});
+
+				$('.slider-gallery').slick({
+					arrows: true,
+					dots: false,
+					infinite: false,
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					prevArrow: '<div class="slick-prev slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" transform="matrix(-1 0 0 1 80 0)" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M29 37.1133L24 40L29 42.8868V40.5H56V39.5H29V37.1133Z" fill="#2A2A2A"/></svg><div/>',
+					nextArrow: '<div class="slick-next slick-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" fill="#F6F6F6"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51 37.1133L56 40L51 42.8868V40.5H24V39.5H51V37.1133Z" fill="#2A2A2A"/></svg><div/>',
+					responsive: [
+						{
+							breakpoint: 1200,
+							settings: {
+								slidesToShow: 1,
+								arrows: false,
+								dots: true,
+							}
+						}
+						]
+					});
+
 	
 
 
@@ -307,12 +429,10 @@ $('.btn-tab').click(function() {
 		  $(this).remove();
 	   }
 		
-
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
-	
 
 	$('.item-form select').select2({
 		closeOnSelect : true,
@@ -329,6 +449,49 @@ $('.btn-tab').click(function() {
 		theme: "custom-option-select"
 	});
 
+	$('.btn-catalog').click(function(e) {
+		e.preventDefault();
+		$(this).siblings('.btn-catalog').removeClass('active');
+		$(this).addClass('active');
+		$(".tab-pane-catalog").fadeOut(0);
+		var selectTab2 = $(this).attr("href");
+		$(selectTab2).fadeIn(200);
+	}); 
+
+	$('.tabs-card li a').click(function(e) {
+		e.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-card").fadeOut(0);
+		var selectTab3 = $(this).attr("href");
+		$(selectTab3).fadeIn(200);
+		$('.slider-for').slick('setPosition');
+		$('.slider-nav').slick('setPosition');
+	});
+
+	$('.name-infrastructure').click(function(e) {
+		e.preventDefault();
+		$(this).parent().siblings().find(".name-infrastructure").removeClass('active');
+		$(this).parent().siblings().find("ul").slideUp(100);
+		$(this).toggleClass('active');
+		$(this).siblings("ul").slideToggle(200);
+	});
+	
+	$('.btn-prices').click(function(e) {
+		e.preventDefault();
+		$(".modal-price").fadeToggle(200);
+	});
+	$('.modal-price__close').click(function(e) {
+		e.preventDefault();
+		$(".modal-price").fadeOut(200);
+	});
+
+	$(".btn-more-features").click(function(e) {
+		e.preventDefault();
+		$(this).parent().find(".list-features > li:not(:visible)").slideDown(0);
+		$(this).remove();
+		
+	});
 
 
 	//Попап менеджер FancyBox
@@ -336,6 +499,13 @@ $('.btn-tab').click(function() {
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
+
+	$(".fancybox-image").fancybox({
+		beforeShow : function(){
+		  $(".fancybox-wrap").addClass("fancybox-main");
+		  
+		}
+	  });
 
 
 	//Кнопка "Наверх"
