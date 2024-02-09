@@ -3304,6 +3304,9 @@
     .btn-catalog img {
         margin-right: 10px;
     }
+    .billbord__location span {
+        display: block;
+    }
 }
 
 /* Extra Small Devices, Phones */
