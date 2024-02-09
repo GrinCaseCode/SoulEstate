@@ -3293,7 +3293,7 @@
     }
     .buttons-catalog .item-form {
         margin-right: 0;
-        min-width: initial;
+        min-width: 46%;
     }
     .btn-catalog {
         margin-left: 6px;
