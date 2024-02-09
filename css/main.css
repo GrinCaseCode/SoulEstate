@@ -2955,6 +2955,7 @@ span.select2-search.select2-search--inline {
 }
 .select-sorting .select2-container--default .select2-selection--single {
 	background: #f6f6f6;
+	border-radius: 0;
 }
 .select-sorting  .select2-container--custom-option-select .select2-selection__rendered, 
 .select-sorting  .select2-container--default .select2-selection--single .select2-selection__rendered, 
