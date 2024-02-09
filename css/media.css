@@ -3292,7 +3292,6 @@
         margin-left: auto;
     }
     .buttons-catalog .item-form {
-        flex-grow: 1;
         margin-right: 0;
         min-width: initial;
     }
