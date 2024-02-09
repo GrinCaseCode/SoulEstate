@@ -1909,7 +1909,9 @@
     .gallery ~ .collections {
         padding-bottom: 90px;
     }
-
+    .header__wrapper .header__right {
+        margin-left: 0;
+    }
 }
 
 
@@ -3285,6 +3287,9 @@
     }
     .gallery ~ .collections {
         padding-bottom: 64px;
+    }
+    .header__wrapper .header__right {
+        margin-left: auto;
     }
 }
 
