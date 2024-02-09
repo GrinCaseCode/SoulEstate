@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/select2/select2.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.17" />
-	<link rel="stylesheet" href="css/media.css?ver=1.17" />
+	<link rel="stylesheet" href="css/main.css?ver=1.18" />
+	<link rel="stylesheet" href="css/media.css?ver=1.18" />
 </head>
 <body>
 
@@ -122,7 +122,7 @@
 			</div>
 			<div class="container">
 				<div class="billbord__content">
-					<ul class="breadcrumbs">
+					<ul class="breadcrumbs hidden-mob">
 						<li><a href="#">Главная</a></li>
 						<li>Недвижимость в Москве</li>
 					</ul>
@@ -166,7 +166,7 @@
 								</div>
 								<div class="item-form">
 									<select data-placeholder="Тип объекта">
-										<option value="1">Тип объекта</option>
+										<option value="" disabled  selected>Тип объекта</option>
 										<option value="1">Комната</option>
 										<option value="2">Дом, дача, коттедж</option>
 										<option value="3">Земельный участок</option>
@@ -315,232 +315,992 @@
 				<div class="head-section">
 					<h2 class="title-section fadeInUp wow" data-wow-duration="1s" data-wow-iteration="1" data-wow-delay="0.3s"><a href="#">3 500</a> объект на продажу в ЖК</h2>
 					<div class="buttons-catalog">
-						<a href="#" class="btn-catalog"><img src="img/sort_catalog.svg" alt="alt">Сортировка</a>
-						<a href="#" class="btn-catalog"><img src="img/map_catalog.svg" alt="alt">а карте</a>
+						<div class="item-form select-sorting">
+							<select data-placeholder="Сортировка">
+								<option value="" disabled  selected>Сортировка</option>
+								<option value="1">Популярные</option>
+								<option value="2">Увеличение цены</option>
+								<option value="3">Уменьшение цены</option>
+								<option value="4">Увеличение площади</option>
+								<option value="5">Уменьшение площади</option>
+							</select>
+						</div>
+						<a href="#tab_map" class="btn-catalog"><img src="img/map_catalog.svg" alt="alt">На карте</a>
 					</div>
 				</div>
-				<div class="row row_main">
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
+				<div class="tab-container-catalog">
+					<div class="tab-pane-catalog" id="tab_catalog">
+						<div class="row row_main">
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog1.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog1.jpg" alt="alt">
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog2.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog3.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog2.jpg" alt="alt">
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog1.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog2.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog3.jpg" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog1.jpg" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog2.jpg" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog3.jpg" alt="alt">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="block-help">
-					<div class="block-help__content">
-						<div class="title-section">Помощь брокера</div>
-						<div class="title-main">Поможем найти, купить или продать недвижимость</div>
-					</div>
-					<a href="#" class="btn-main btn-main_page">Получить консультацию</a>
-				</div>
-				<div class="row row_main">
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog1.jpg" alt="alt">
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog3.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
+						<div class="block-help">
+							<div class="block-help__content">
+								<div class="title-section">Помощь брокера</div>
+								<div class="title-main">Поможем найти, купить или продать недвижимость</div>
 							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog2.jpg" alt="alt">
+							<a href="#" class="btn-main btn-main_page">Получить консультацию</a>
+						</div>
+						<div class="row row_main">
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog1.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog2.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog3.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog1.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog2.jpg" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="unit-catalog">
+									<ul class="tags-catalog">
+										<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
+									</ul>
+									<div class="btn-like"></div>
+									<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+									<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
+									<div class="unit-catalog__bottom">
+										<div class="price-main">от 340 000 000 ₽</div>
+										<a href="#" class="btn-main">Узнать подробности</a>
+									</div>
+									<div class="unit-catalog__image">
+										<img src="img/unit_catalog3.jpg" alt="alt">
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog3.jpg" alt="alt">
-							</div>
+						<a href="#" class="btn-more">Показать еще</a>
+						<div class="pager">
+							<a class="prev page-numbers" href="#"><i class="far fa-chevron-left"></i></a>
+							<span aria-current="page" class="page-numbers current" href="#">1</span> 
+							<a class="page-numbers" href="#">2</a> 
+							<a class="page-numbers" href="#">3</a> 
+							<a class="next page-numbers" href="#"><i class="far fa-chevron-right"></i></a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
+					<div class="tab-pane-catalog" id="tab_map">
+						<div class="map-wrap">
+							<div class="tab-container-map">
+								<div class="tab-pane-map" id="tab_map1">
+									<ul class="list-catalog">
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane-map" id="tab_map2">
+									<ul class="list-catalog">
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane-map" id="tab_map3">
+									<ul class="list-catalog">
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane-map" id="tab_map4">
+									<ul class="list-catalog">
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-pane-map" id="tab_map5">
+									<ul class="list-catalog">
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="item-catalog">
+												<ul class="tags-catalog">
+													<li><div class="item-tag">Квартира</div></li>
+													<li><div class="item-tag"><img src="img/tag1.svg" alt="alt">Новинка</div></li>
+												</ul>
+												<div class="btn-like"></div>
+												<ul class="item-catalog__slider">
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog2.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+													<li>
+														<div class="item-catalog__image">
+															<img src="img/catalog1.jpg" alt="alt">
+														</div>
+													</li>
+												</ul>
+												<div class="item-catalog__content">
+													<div class="item-catalog__articul">Лот №123456</div>
+													<a href="#" class="item-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
+													<div class="item-catalog__location">Звенигородское шоссе, 11 <span>5 км от МКАД</span></div>
+													<div class="features">
+														<div class="features__item"><img src="img/ic_feature1.svg" alt="alt">284 м<sup>2</sup></div>
+														<div class="features__item"><img src="img/ic_feature2.svg" alt="alt">3 спальни</div>
+														<div class="features__item"><img src="img/ic_feature3.svg" alt="alt">16 этаж</div>
+														<div class="features__item"><img src="img/ic_feature4.svg" alt="alt">С отделкой</div>
+													</div>
+													<div class="item-catalog__bottom">
+														<div class="wrap-prices">
+															<div class="price-old">340 000 000 ₽</div>
+															<div class="price-main">340 000 000 ₽ <span>↓</span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog1.jpg" alt="alt">
-							</div>
+							<div id="map-catalog"></div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog2.jpg" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="unit-catalog">
-							<ul class="tags-catalog">
-								<li><div class="item-tag"><img src="img/tag_key1.svg" alt="alt">Сдача в 2024 году</div></li>
-							</ul>
-							<div class="btn-like"></div>
-							<a href="#" class="unit-catalog__title">ЖК Дизайнерский дом «Eleven»</a>
-							<div class="unit-catalog__location">Звенигородское шоссе, 11</div>
-							<div class="unit-catalog__bottom">
-								<div class="price-main">от 340 000 000 ₽</div>
-								<a href="#" class="btn-main">Узнать подробности</a>
-							</div>
-							<div class="unit-catalog__image">
-								<img src="img/unit_catalog3.jpg" alt="alt">
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="btn-more">Показать еще</a>
-				<div class="pager">
-					<a class="prev page-numbers" href="#"><i class="far fa-chevron-left"></i></a>
-					<span aria-current="page" class="page-numbers current" href="#">1</span> 
-					<a class="page-numbers" href="#">2</a> 
-					<a class="page-numbers" href="#">3</a> 
-					<a class="next page-numbers" href="#"><i class="far fa-chevron-right"></i></a>
 				</div>
 				<div class="help-form">
 					<div class="row">
@@ -654,12 +1414,12 @@
 			<div class="container">
 				<div class="row catalog__top">
 					<div class="col-xl-6">
-						<h2 class="title-section fadeInUp wow" data-wow-duration="1s" data-wow-iteration="1" data-wow-delay="0.3s">Вам может быть интересно</h2>
+						<h2 class="title-section">Вам может быть интересно</h2>
 					</div>
 				</div>
 				<div class="row row_main">
 					<div class="col-xl-3 col-md-6">
-						<a href="#" class="item-collection zoomIn wow" data-wow-iteration="1"  data-wow-duration="2s" data-wow-delay="0.3s">
+						<a href="#" class="item-collection">
 							<span class="item-collection__title">Новостройки</span>
 							<span class="item-collection__image">
 								<img src="img/collection1.jpg" alt="alt">
@@ -667,7 +1427,7 @@
 						</a>
 					</div>
 					<div class="col-xl-3 col-md-6">
-						<a href="#" class="item-collection zoomIn wow" data-wow-iteration="1"  data-wow-duration="2s" data-wow-delay="0.3s">
+						<a href="#" class="item-collection">
 							<span class="item-collection__title">Пентхаусы</span>
 							<span class="item-collection__image">
 								<img src="img/collection2.jpg" alt="alt">
@@ -675,7 +1435,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="#" class="item-collection zoomIn wow" data-wow-iteration="1"  data-wow-duration="2s" data-wow-delay="0.3s">
+						<a href="#" class="item-collection">
 							<span class="item-collection__title">Квартиры с террасами, патио</span>
 							<span class="item-collection__image">
 								<img src="img/collection3.jpg" alt="alt">
@@ -683,7 +1443,7 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-md-6">
-						<a href="#" class="item-collection zoomIn wow" data-wow-iteration="1"  data-wow-duration="2s" data-wow-delay="0.3s">
+						<a href="#" class="item-collection">
 							<span class="item-collection__title">Для инвестиций</span>
 							<span class="item-collection__image">
 								<img src="img/collection4.jpg" alt="alt">
@@ -691,7 +1451,7 @@
 						</a>
 					</div>
 					<div class="col-xl-3 col-md-6">
-						<a href="#" class="item-collection zoomIn wow" data-wow-iteration="1"  data-wow-duration="2s" data-wow-delay="0.3s">
+						<a href="#" class="item-collection">
 							<span class="item-collection__title">Дома на лесных участках</span>
 							<span class="item-collection__image">
 								<img src="img/collection5.jpg" alt="alt">
@@ -699,7 +1459,7 @@
 						</a>
 					</div>
 					<div class="col-xl-3 col-md-6">
-						<a href="#" class="item-collection zoomIn wow" data-wow-iteration="1"  data-wow-duration="2s" data-wow-delay="0.3s">
+						<a href="#" class="item-collection">
 							<span class="item-collection__title">Виллы и таунхаусы в городе</span>
 							<span class="item-collection__image">
 								<img src="img/collection6.jpg" alt="alt">
@@ -1095,7 +1855,140 @@
 	<script src="libs/parallax/jquery.easing.1.3.js"></script>
 	<script src="libs/parallax/jquery.parallax-scroll.js"></script>
 	<script src="libs/select2/select2.js"></script>
-	<script src="js/common.js?ver=1.17"></script>
+	<script src="js/common.js?ver=1.18"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map-catalog', {
+				center: [55.752583, 37.623406],
+				zoom: 13	
+			}, {
+				searchControlProvider: 'yandex#search'
+			});		
+
+
+			myPlacemark1 = new ymaps.Placemark([55.760424, 37.595768], {
+				iconContent: '3'
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin_catalog.svg',
+				hideIconOnBalloonOpen: false,
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 40],
+				iconImageOffset: [-20, 0],
+				iconContentOffset: [15, 10],
+			});
+			myPlacemark2 = new ymaps.Placemark([55.760811, 37.601090], {
+				iconContent: '12'
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin_catalog.svg',
+				hideIconOnBalloonOpen: false,
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 40],
+				iconImageOffset: [-20, 0],
+				iconContentOffset: [15, 10],
+			});
+			myPlacemark3 = new ymaps.Placemark([55.765360, 37.606239], {
+				iconContent: '9'
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin_catalog.svg',
+				hideIconOnBalloonOpen: false,
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 40],
+				iconImageOffset: [-20, 0],
+				iconContentOffset: [15, 10],
+			});
+			myPlacemark4 = new ymaps.Placemark([55.760134, 37.631508], {
+				iconContent: '45'
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin_catalog.svg',
+				hideIconOnBalloonOpen: false,
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 40],
+				iconImageOffset: [-20, 0],
+				iconContentOffset: [15, 10],
+			});
+			myPlacemark5 = new ymaps.Placemark([55.747646, 37.639404], {
+				iconContent: '5'
+			}, {
+				iconLayout: 'default#imageWithContent',
+				iconImageHref: 'img/pin_catalog.svg',
+				hideIconOnBalloonOpen: false,
+				hideIconOnBalloonOpen: false,
+				iconImageSize: [40, 40],
+				iconImageOffset: [-20, 0],
+				iconContentOffset: [15, 10],
+			});
+
+
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+			myMap.geoObjects.add(myPlacemark1);
+			myMap.geoObjects.add(myPlacemark2);
+			myMap.geoObjects.add(myPlacemark3);
+			myMap.geoObjects.add(myPlacemark4);
+			myMap.geoObjects.add(myPlacemark5);
+
+			myPlacemark1.events.add('click', function () {
+				$(".tab-pane-map").fadeOut(0);
+				$("#tab_map1").fadeIn(200);
+				$(".tab-container-map .item-catalog__slider").slick('setPosition');
+				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog2.svg'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
+			});
+			myPlacemark2.events.add('click', function () {
+				$(".tab-pane-map").fadeOut(0);
+				$("#tab_map2").fadeIn(200);
+				$(".tab-container-map .item-catalog__slider").slick('setPosition');
+				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog2.svg'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
+			});
+			myPlacemark3.events.add('click', function () {
+				$(".tab-pane-map").fadeOut(0);
+				$("#tab_map3").fadeIn(200);
+				$(".tab-container-map .item-catalog__slider").slick('setPosition');
+				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog2.svg'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
+			});
+			myPlacemark4.events.add('click', function () {
+				$(".tab-pane-map").fadeOut(0);
+				$("#tab_map4").fadeIn(200);
+				$(".tab-container-map .item-catalog__slider").slick('setPosition');
+				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog2.svg'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
+			});
+			myPlacemark5.events.add('click', function () {
+				$(".tab-pane-map").fadeOut(0);
+				$("#tab_map5").fadeIn(200);
+				$(".tab-container-map .item-catalog__slider").slick('setPosition');
+				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog2.svg'});
+				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
+				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
+			});
+		}
+
+	});
+</script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
