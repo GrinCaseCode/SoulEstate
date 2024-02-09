@@ -1476,137 +1476,275 @@
 	<script src="js/common.js?ver=1.18"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
-	$(document).ready(function() {
-		ymaps.ready(init);
+		$(document).ready(function () {
+			ymaps.ready(init);
+ 
+			function init() {
+				var myMap = new ymaps.Map('map-infrastructure', {
+					center: [55.759224, 37.622501],
+					zoom: 13
+				}, {
+					searchControlProvider: 'yandex#search'
+				});
 
-		function init() {
-			var myMap = new ymaps.Map('map-catalog', {
-				center: [55.752583, 37.623406],
-				zoom: 13	
-			}, {
-				searchControlProvider: 'yandex#search'
-			});		
+				myPlacemark = new ymaps.Placemark([55.761208, 37.640354], {
+					balloonContent: `
+					<div class="balloon-info">
+						<div class="balloon-info__image">
+							<img src="img/img_balloon1.jpg" alt="alt">
+						</div>
+						<div class="balloon-info__content">
+							<div class="balloon-info__name">ЖК Абрикосов</div>
+							<div class="balloon-info__descr">Потаповский переулок, 6</div>
+						</div>
+					</div>
+					`,
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark1 = new ymaps.Placemark([55.754238, 37.633659], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark2 = new ymaps.Placemark([55.759321, 37.626793], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark3 = new ymaps.Placemark([55.762079, 37.623102], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark4 = new ymaps.Placemark([55.770644, 37.624046], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark5 = new ymaps.Placemark([55.771853, 37.594864], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark6 = new ymaps.Placemark([55.763724, 37.667305], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark7 = new ymaps.Placemark([55.752496, 37.624561], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark8 = new ymaps.Placemark([55.754432, 37.614948], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark9 = new ymaps.Placemark([55.746590, 37.650482], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myPlacemark10 = new ymaps.Placemark([55.753367, 37.605507], {
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/pin.svg',
+					hideIconOnBalloonOpen: false,
+					iconImageSize: [31, 31],
+					iconImageOffset: [-15, -31],
+					balloonOffset: [0, -31]
+				});
+				myMap.controls.remove('searchControl');
+				myMap.behaviors.disable('scrollZoom');
+				myMap.geoObjects.add(myPlacemark);
+				myMap.geoObjects.add(myPlacemark1);
+				myMap.geoObjects.add(myPlacemark2);
+				myMap.geoObjects.add(myPlacemark3);
+				myMap.geoObjects.add(myPlacemark4);
+				myMap.geoObjects.add(myPlacemark5);
+				myMap.geoObjects.add(myPlacemark6);
+				myMap.geoObjects.add(myPlacemark7);
+				myMap.geoObjects.add(myPlacemark8);
+				myMap.geoObjects.add(myPlacemark9);
+				myMap.geoObjects.add(myPlacemark10);
 
+				myPlacemark.balloon.open();
 
-			myPlacemark1 = new ymaps.Placemark([55.760424, 37.595768], {
-				iconContent: '3'
-			}, {
-				iconLayout: 'default#imageWithContent',
-				iconImageHref: 'img/pin_catalog.svg',
-				hideIconOnBalloonOpen: false,
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [40, 40],
-				iconImageOffset: [-20, 0],
-				iconContentOffset: [15, 10],
-			});
-			myPlacemark2 = new ymaps.Placemark([55.760811, 37.601090], {
-				iconContent: '12'
-			}, {
-				iconLayout: 'default#imageWithContent',
-				iconImageHref: 'img/pin_catalog.svg',
-				hideIconOnBalloonOpen: false,
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [40, 40],
-				iconImageOffset: [-20, 0],
-				iconContentOffset: [15, 10],
-			});
-			myPlacemark3 = new ymaps.Placemark([55.765360, 37.606239], {
-				iconContent: '9'
-			}, {
-				iconLayout: 'default#imageWithContent',
-				iconImageHref: 'img/pin_catalog.svg',
-				hideIconOnBalloonOpen: false,
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [40, 40],
-				iconImageOffset: [-20, 0],
-				iconContentOffset: [15, 10],
-			});
-			myPlacemark4 = new ymaps.Placemark([55.760134, 37.631508], {
-				iconContent: '45'
-			}, {
-				iconLayout: 'default#imageWithContent',
-				iconImageHref: 'img/pin_catalog.svg',
-				hideIconOnBalloonOpen: false,
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [40, 40],
-				iconImageOffset: [-20, 0],
-				iconContentOffset: [15, 10],
-			});
-			myPlacemark5 = new ymaps.Placemark([55.747646, 37.639404], {
-				iconContent: '5'
-			}, {
-				iconLayout: 'default#imageWithContent',
-				iconImageHref: 'img/pin_catalog.svg',
-				hideIconOnBalloonOpen: false,
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [40, 40],
-				iconImageOffset: [-20, 0],
-				iconContentOffset: [15, 10],
-			});
-
-
-			myMap.controls.remove('searchControl');
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark1);
-			myMap.geoObjects.add(myPlacemark2);
-			myMap.geoObjects.add(myPlacemark3);
-			myMap.geoObjects.add(myPlacemark4);
-			myMap.geoObjects.add(myPlacemark5);
-
-			myPlacemark1.events.add('click', function () {
-				$(".tab-pane-map").fadeOut(0);
-				$("#tab_map1").fadeIn(200);
-				$(".tab-container-map .item-catalog__slider").slick('setPosition');
-				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog2.svg'});
-				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
-			});
-			myPlacemark2.events.add('click', function () {
-				$(".tab-pane-map").fadeOut(0);
-				$("#tab_map2").fadeIn(200);
-				$(".tab-container-map .item-catalog__slider").slick('setPosition');
-				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog2.svg'});
-				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
-			});
-			myPlacemark3.events.add('click', function () {
-				$(".tab-pane-map").fadeOut(0);
-				$("#tab_map3").fadeIn(200);
-				$(".tab-container-map .item-catalog__slider").slick('setPosition');
-				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog2.svg'});
-				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
-			});
-			myPlacemark4.events.add('click', function () {
-				$(".tab-pane-map").fadeOut(0);
-				$("#tab_map4").fadeIn(200);
-				$(".tab-container-map .item-catalog__slider").slick('setPosition');
-				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog2.svg'});
-				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog.svg'});
-			});
-			myPlacemark5.events.add('click', function () {
-				$(".tab-pane-map").fadeOut(0);
-				$("#tab_map5").fadeIn(200);
-				$(".tab-container-map .item-catalog__slider").slick('setPosition');
-				myPlacemark5.options.set({iconImageHref: 'img/pin_catalog2.svg'});
-				myPlacemark2.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark3.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark4.options.set({iconImageHref: 'img/pin_catalog.svg'});
-				myPlacemark1.options.set({iconImageHref: 'img/pin_catalog.svg'});
-			});
-		}
-
-	});
-</script>
+				$("#id-infrastructure1").click(function() {
+					myMap.setCenter([55.754238, 37.633659]);
+					myPlacemark1.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure2").click(function() {
+					myMap.setCenter([55.759321, 37.626793]);
+					myPlacemark2.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure3").click(function() {
+					myMap.setCenter([55.762079, 37.623102]);
+					myPlacemark3.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure4").click(function() {
+					myMap.setCenter([55.770644, 37.624046]);
+					myPlacemark4.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure5").click(function() {
+					myMap.setCenter([55.771853, 37.594864]);
+					myPlacemark5.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure6").click(function() {
+					myMap.setCenter([55.763724, 37.667305]);
+					myPlacemark6.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure7").click(function() {
+					myMap.setCenter([55.752496, 37.624561]);
+					myPlacemark7.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure8").click(function() {
+					myMap.setCenter([55.752496, 37.624561]);
+					myPlacemark8.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure9").click(function() {
+					myMap.setCenter([55.746590, 37.650482]);
+					myPlacemark9.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark10.options.set({iconImageHref: 'img/pin.svg'});
+				});
+				$("#id-infrastructure10").click(function() {
+					myMap.setCenter([55.753367, 37.605507]);
+					myPlacemark10.options.set({iconImageHref: 'img/pin2.svg'});
+					myPlacemark2.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark3.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark4.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark5.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark6.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark7.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark8.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark9.options.set({iconImageHref: 'img/pin.svg'});
+					myPlacemark1.options.set({iconImageHref: 'img/pin.svg'});
+				});
+			}
+		});
+	</script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
