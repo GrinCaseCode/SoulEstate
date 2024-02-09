@@ -369,6 +369,7 @@ $('.btn-tab').click(function() {
 		$(this).parents(".catalog").find('.slider-three').slick('setPosition');
 		$(this).parents(".catalog").find('.slider-two').slick('setPosition');
 		$(this).parents(".catalog").find(".item-catalog__slider").slick('setPosition');
+		$(this).parents(".catalog").find(".slider-images").slick('setPosition');
 		$(this).parent().parent().siblings(".btn-tab").html(textTab);
 		$(this).parent().parent().siblings(".btn-tab").removeClass("active");
 
