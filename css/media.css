@@ -73,18 +73,21 @@
         letter-spacing: normal;
     }
     .features__item {
-        margin-right: 8px;
+        font-size: 13px;
+    margin-right: 8px;
+}
+    .features__item img {
+    margin-right: 3px;
     }
     .item-catalog__bottom {
         padding-top: 24px;
-        display: block;
-    }
-    .item-catalog__bottom .wrap-prices {
-        padding-bottom: 16px;
     }
     .price-main {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 24px;
+    }
+    .item-catalog .btn-main {
+        font-size: 15px;
     }
     .feedback {
         padding-top: 170px;
@@ -148,12 +151,6 @@
     .unit-catalog {
         height: 478px;
         padding: 16px;
-    }
-    .unit-catalog__bottom {
-        display: block;
-    }
-    .unit-catalog .btn-main {
-        margin-top: 16px;
     }
     .collections .title-section {
         max-width: 450px;
@@ -1090,6 +1087,34 @@
     .gallery ~ .collections {
         padding-bottom: 115px;
     }
+    .unit-catalog .btn-main {
+        font-size: 15px;
+    }
+    .socials-buttons a {
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+    .socials-buttons li {
+        margin-right: 14px;
+    }
+    .socials-buttons a img {
+        margin-right: 10px;
+        max-width: 20px;
+        max-height: 20px;
+    }
+    .feedback.feedback_socials .title-section {
+        padding-bottom: 26px;
+        margin-right: -63px;
+    }
+    .feedback_socials .socials-buttons {
+        margin-bottom: 30px;
+    }
+    .feedback.feedback_socials .descr-section {
+        max-width: 378px;
+    }
+    .feedback.feedback_socials {
+        padding-bottom: 140px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -1911,6 +1936,52 @@
     }
     .header__wrapper .header__right {
         margin-left: 0;
+    }
+
+    .footer__menu__dropdown {
+        display: none;
+    }
+    .footer__menu a {
+        padding: 6px 0;
+        display: block;
+        position: relative;
+        border: none;
+    }
+    .footer__menu__haschild > a::after {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        content: "\f078";
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 400;
+        font-size: 12px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        transition: all 0.3s;
+    }
+    .footer__menu__haschild > a.active::after {
+        transform: rotate(180deg);
+    }
+    .footer__menu__dropdown a {
+        padding: 4px 0px;
+    }
+    .feedback.feedback_socials .title-section {
+        margin-right: 0;
+    }
+    .video-billbord {
+        display: none;
     }
 }
 
@@ -3307,6 +3378,32 @@
     .billbord__location span {
         display: block;
     }
+    .feedback.feedback_socials .title-section {
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+    .feedback.feedback_socials {
+        padding-bottom: 70px;
+        padding-top: 34px;
+    }
+    .socials-buttons a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+    .socials-buttons li {
+        margin-right: 7px;
+    }
+    .socials-buttons a img {
+        margin-right: 4px;
+        max-width: 15px;
+        max-height: 15px;
+    }
+    .feedback_socials .socials-buttons {
+        margin-bottom: 20px;
+    }
+    .footer__left_main .text-small {
+        max-width: 290px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -3320,8 +3417,17 @@
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 400px) {
+    .unit-catalog__bottom,
+    .item-catalog__bottom {
+        display: block;
+    }
+    .unit-catalog .btn-main {
+        margin-top: 15px;
+    }
+    .wrap-prices {
+        padding-bottom: 16px;
+    }
 }
 
 
@@ -3422,6 +3528,9 @@
 }
 .slider-photos-card {
     display: none !important;
+  }
+  .footer__menu__dropdown {
+    display: block !important;
   }
 }
 @media (min-width: 1660px) {

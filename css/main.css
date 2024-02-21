@@ -4011,3 +4011,58 @@ span.select2-search.select2-search--inline {
 .presentation + .catalog {
 	padding-top: 0;
 }
+.consultation-block .descr-section {
+	font-weight: 300;
+}
+.btn-catalog i {
+	margin-right: 15px;
+}
+.btn-catalog.hide {
+	display: none;
+}
+.feedback.feedback_socials {
+	padding-bottom: 180px;
+	padding-top: 0;
+}
+.feedback.feedback_socials .title-section {
+	padding-bottom: 40px;
+	margin-right: -120px;
+	padding-top: 0;
+}
+.feedback.feedback_socials .descr-section {
+    max-width: 541px;
+	padding-bottom: 0;
+}
+.socials-buttons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.socials-buttons li {
+	margin-right: 20px;
+}
+.socials-buttons li:last-child {
+	margin-right: 0;
+}
+.socials-buttons a {
+	font-size: 20px;
+	padding: 12px 16px;
+	background: #fff;
+	border-radius: 8px;
+	line-height: 120%;
+	color: #2a2a2a;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.socials-buttons a:hover {
+	opacity: 0.8;
+}
+.socials-buttons a img {
+	margin-right: 16px;
+}
+.feedback_socials .socials-buttons {
+	margin-bottom: 40px;
+}
