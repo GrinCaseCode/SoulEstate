@@ -3733,6 +3733,14 @@
     .page-about ~ .collections {
         padding-bottom: 64px;
     }
+    .item-billbord.wow {
+        visibility: visible !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+       }
 }
 
 /* Extra Small Devices, Phones */
