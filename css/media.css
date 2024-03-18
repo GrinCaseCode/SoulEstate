@@ -3634,7 +3634,7 @@
     .item-team {
         padding-bottom: 28px;
     }
-    .team .row_main > div:nth-child(n+4) {
+    .team .row_main > div:nth-child(n+5) {
         display: none;
     }
     .team .block-help .title-section {
@@ -3651,7 +3651,7 @@
     .catalog-about .row_main > div {
         margin-bottom: 35px;
     }
-    .catalog-about .row_main > div:nth-child(n+3) {
+    .catalog-about .row_main > div:nth-child(n+4) {
         display: none;
     }
     .catalog-about .btn-more {
