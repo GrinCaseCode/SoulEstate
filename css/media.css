@@ -1354,9 +1354,6 @@
     .page-news .head-section {
         padding-bottom: 34px;
     }
-    .page-news.catalog .title-section {
-        margin-bottom: 0;
-    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -2316,7 +2313,9 @@
         padding: 9px 11px;
         font-size: 13px;
     }
-    
+    .page-news.catalog .title-section {
+        margin-bottom: 0;
+    }
 }
 
 
