@@ -4479,6 +4479,9 @@
     .service-block__image img {
         border-radius: 24px;
     }
+    .service-block__title::after {
+        margin-left: 30px;
+    }
 }
 
 /* Extra Small Devices, Phones */
