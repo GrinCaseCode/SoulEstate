@@ -31,6 +31,8 @@ $(document).ready(function() {
 	}
 }
 
+$("*[data-video-id]").modalVideo();
+
 	/*animate*/
 	new WOW().init();
 
