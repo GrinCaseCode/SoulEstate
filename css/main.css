@@ -5082,6 +5082,7 @@ span.select2-search.select2-search--inline {
 	content: " ";
 	width: 60px;
 	height: 60px;
+	margin-left: 15px;
 	border-radius: 50%;
 	background: #2A2A2A;
 	background-image: url(../img/arrow.svg);
