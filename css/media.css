@@ -4494,6 +4494,7 @@
     }
     .col-partner .item-partner {
         height: 110px;
+        border-radius: 16px;
     }
 }
 
