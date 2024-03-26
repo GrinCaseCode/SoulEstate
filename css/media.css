@@ -4492,6 +4492,9 @@
     .sidebar-catalog .item-catalog__image {
         height: 260px;
     }
+    .col-partner .item-partner {
+        height: 110px;
+    }
 }
 
 /* Custom, iPhone Retina */
